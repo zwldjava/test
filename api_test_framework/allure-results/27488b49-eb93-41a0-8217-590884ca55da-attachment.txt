@@ -1,0 +1,2 @@
+2025-12-27 21:51:44,969 - core.base_test - INFO - 开始测试: TestUserRegistration
+2025-12-27 21:51:44,980 - core.base_test - INFO - 结束测试: TestUserRegistration

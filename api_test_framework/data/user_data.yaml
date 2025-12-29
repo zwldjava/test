@@ -1,0 +1,67 @@
+users:
+  register:
+    valid:
+      username: "testuser001"
+      email: "testuser001@example.com"
+      phone: "13800138001"
+      name: "测试用户"
+      age: 25
+      address: "北京市朝阳区"
+      password: "Test123456"
+    
+    duplicate_phone:
+      username: "testuser002"
+      email: "testuser002@example.com"
+      phone: "18821371697"
+      name: "测试用户2"
+      age: 30
+      address: "上海市浦东新区"
+      password: "Test123456"
+    
+    invalid_email:
+      username: "testuser003"
+      email: "invalid-email"
+      phone: "13800138003"
+      name: "测试用户3"
+      age: 28
+      address: "广州市天河区"
+      password: "Test123456"
+    
+    invalid_phone:
+      username: "testuser004"
+      email: "testuser004@example.com"
+      phone: "123"
+      name: "测试用户4"
+      age: 35
+      address: "深圳市南山区"
+      password: "Test123456"
+  
+  update:
+    valid:
+      name: "更新后的用户名"
+      age: 26
+      address: "北京市海淀区"
+    
+    invalid_age:
+      name: "测试用户"
+      age: -1
+      address: "测试地址"
+  
+  delete:
+    valid_user_id: 1
+    invalid_user_id: 999999
+
+profile:
+  valid:
+    name: "用户资料"
+    age: 30
+    gender: 1
+    avatar: "https://example.com/avatar.jpg"
+    bio: "这是个人简介"
+  
+  invalid_gender:
+    name: "用户资料"
+    age: 30
+    gender: 3
+    avatar: "https://example.com/avatar.jpg"
+    bio: "这是个人简介"

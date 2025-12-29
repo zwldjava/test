@@ -1,0 +1,81 @@
+products:
+  create:
+    valid:
+      name: "测试产品"
+      description: "这是一个测试产品"
+      price: 99.99
+      stock: 100
+      category_id: 1
+      status: 1
+    
+    invalid_price:
+      name: "测试产品"
+      description: "这是一个测试产品"
+      price: -10
+      stock: 100
+      category_id: 1
+      status: 1
+    
+    invalid_stock:
+      name: "测试产品"
+      description: "这是一个测试产品"
+      price: 99.99
+      stock: -5
+      category_id: 1
+      status: 1
+  
+  update:
+    valid:
+      name: "更新后的产品"
+      description: "更新后的描述"
+      price: 199.99
+      stock: 50
+      status: 1
+    
+    partial:
+      name: "仅更新名称"
+      description: ""
+      price: 0
+      stock: 0
+      status: 0
+  
+  delete:
+    valid_product_id: 1
+    invalid_product_id: 999999
+
+search:
+  valid:
+    keyword: "测试"
+    page: 1
+    page_size: 10
+  
+  empty_keyword:
+    keyword: ""
+    page: 1
+    page_size: 10
+  
+  large_page_size:
+    keyword: "测试"
+    page: 1
+    page_size: 1000
+
+categories:
+  create:
+    valid:
+      name: "测试分类"
+      description: "这是一个测试分类"
+      parent_id: 0
+  
+    duplicate_name:
+      name: "测试分类"
+      description: "重复的分类名称"
+      parent_id: 0
+  
+  update:
+    valid:
+      name: "更新后的分类"
+      description: "更新后的描述"
+  
+  delete:
+    valid_category_id: 1
+    invalid_category_id: 999999

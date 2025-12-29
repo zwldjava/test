@@ -1,0 +1,5 @@
+tests\api\test_ping.py:38: in test_ping_endpoint
+    self.validator.validate_status_code(response, 200)
+core\validator.py:16: in validate_status_code
+    actual_status == expected_status
+E   AssertionError: 状态码不匹配: 期望 200, 实际 401

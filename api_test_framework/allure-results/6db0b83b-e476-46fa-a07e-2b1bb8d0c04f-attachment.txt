@@ -1,0 +1,6 @@
+2025-12-27 21:51:46,159 - core.base_test - INFO - 开始测试: TestUserLogin
+2025-12-27 21:51:46,161 - core.base_test - INFO - 请求: POST /users/login
+2025-12-27 21:51:46,161 - core.base_test - INFO - 请求体: {"username": "nonexistentuser", "password": "password123"}
+2025-12-27 21:51:46,705 - core.base_test - INFO - 响应状态: 401
+2025-12-27 21:51:46,705 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766843507}
+2025-12-27 21:51:46,719 - core.base_test - INFO - 结束测试: TestUserLogin

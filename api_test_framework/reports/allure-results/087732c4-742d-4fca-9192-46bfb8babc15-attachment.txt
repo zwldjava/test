@@ -1,0 +1,6 @@
+2025-12-27 16:48:21,178 - core.base_test - INFO - 开始测试: TestUserRegistration
+2025-12-27 16:48:21,180 - core.base_test - INFO - 请求: POST /api/users/register
+2025-12-27 16:48:21,180 - core.base_test - INFO - 请求体: {"username": "xiafeng", "phone": "18687703392", "name": "何明", "age": 58, "address": "天津市合肥县平山西安路K座 811346", "avatar": "https://dummyimage.com/536x255"}
+2025-12-27 16:48:21,562 - core.base_test - INFO - 响应状态: 401
+2025-12-27 16:48:21,563 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766825302}
+2025-12-27 16:48:21,574 - core.base_test - INFO - 结束测试: TestUserRegistration

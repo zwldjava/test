@@ -1,0 +1,6 @@
+2025-12-27 21:51:40,920 - core.base_test - INFO - 开始测试: TestSensitiveDataLeakage
+2025-12-27 21:51:40,922 - core.base_test - INFO - 请求: POST /api/users/register
+2025-12-27 21:51:40,922 - core.base_test - INFO - 请求体: {"username": "testuser", "email": "test@example.com", "password": "SecretPassword123!", "credit_card": "4111111111111111", "secret": "mysecretkey"}
+2025-12-27 21:51:41,439 - core.base_test - INFO - 响应状态: 401
+2025-12-27 21:51:41,439 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766843502}
+2025-12-27 21:51:41,453 - core.base_test - INFO - 结束测试: TestSensitiveDataLeakage

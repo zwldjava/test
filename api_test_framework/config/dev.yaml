@@ -1,0 +1,44 @@
+api:
+  base_url: https://growth-dev.zhijianai.cc/api
+  timeout: 30
+  headers:
+    Content-Type: application/json
+    Accept: application/json
+  auth:
+    type: bearer
+    token: ""
+
+database:
+  host: localhost
+  port: 5432
+  name: test_db
+  user: test_user
+  password: test_pass
+
+security:
+  enable_sql_injection_check: true
+  enable_xss_check: true
+  enable_auth_bypass_check: true
+  enable_rate_limit_check: true
+  enable_sensitive_data_check: true
+  sensitive_keywords:
+    - password
+    - token
+    - secret
+    - api_key
+    - credit_card
+  blocked_patterns:
+    - "<script"
+    - "javascript:"
+    - "onerror="
+    - "onload="
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/test.log
+
+report:
+  allure: true
+  html: true
+  json: true

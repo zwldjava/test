@@ -1,0 +1,7 @@
+tests\api\test_security.py:262: in test_api_response_spec
+    response = self.request(
+core\base_test.py:106: in request
+    self.validator.validate_status_code(response, expected_status)
+core\validator.py:16: in validate_status_code
+    actual_status == expected_status
+E   AssertionError: 状态码不匹配: 期望 200, 实际 401

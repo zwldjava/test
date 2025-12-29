@@ -1,0 +1,4 @@
+tests\api\test_ping.py:119: in test_ping_concurrent_requests
+    assert success_count == 10, f"部分请求失败: {success_count}/10"
+E   AssertionError: 部分请求失败: 0/10
+E   assert 0 == 10

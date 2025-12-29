@@ -1,0 +1,190 @@
+name: API Tests CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.10'
+  TEST_ENV: test
+
+jobs:
+  test:
+    name: Run API Tests
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements-dev.txt
+    
+    - name: Run linter (flake8)
+      run: |
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
+    - name: Run security check (bandit)
+      run: |
+        bandit -r . -f json -o bandit-report.json || true
+        bandit -r . || true
+    
+    - name: Run dependency check (safety)
+      run: |
+        safety check --json --output safety-report.json || true
+        safety check || true
+    
+    - name: Run unit tests
+      run: |
+        pytest tests/unit/ -v --tb=short --cov=api_test_framework --cov-report=xml --cov-report=html
+    
+    - name: Run API tests (smoke)
+      run: |
+        pytest tests/api/ -v -m smoke --tb=short --alluredir=allure-results
+    
+    - name: Run API tests (regression)
+      run: |
+        pytest tests/api/ -v -m regression --tb=short --alluredir=allure-results
+    
+    - name: Run security tests
+      run: |
+        pytest tests/api/ -v -m security --tb=short --alluredir=allure-results
+    
+    - name: Generate Allure Report
+      if: always()
+      run: |
+        pip install allure-pytest
+        allure generate allure-results --clean -o allure-report
+    
+    - name: Upload Allure Report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report-${{ matrix.python-version }}
+        path: allure-report/
+        retention-days: 30
+    
+    - name: Upload coverage reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report-${{ matrix.python-version }}
+        path: htmlcov/
+        retention-days: 30
+    
+    - name: Upload security reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-reports-${{ matrix.python-version }}
+        path: |
+          bandit-report.json
+          safety-report.json
+        retention-days: 30
+    
+    - name: Comment PR with results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const comment = `## 测试结果 (Python ${{ matrix.python-version }})
+          
+          ### 测试状态
+          - 单元测试: ✅ 通过
+          - 冒烟测试: ✅ 通过
+          - 回归测试: ✅ 通过
+          - 安全测试: ✅ 通过
+          
+          ### 测试报告
+          请查看 Actions artifacts 获取详细报告。
+          `;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+
+  security-scan:
+    name: Security Scanning
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+    
+    - name: Upload Trivy results to GitHub Security
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: 'trivy-results.sarif'
+    
+    - name: Run CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        languages: python
+
+  notify:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [test, security-scan]
+    if: always()
+    
+    steps:
+    - name: Send Slack notification
+      if: failure()
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        text: 'API测试失败，请检查日志'
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+    
+    - name: Send Email notification
+      if: failure()
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: 'API测试失败通知'
+        to: ${{ secrets.NOTIFICATION_EMAIL }}
+        from: 'CI/CD Bot'
+        body: |
+          API测试失败，请查看GitHub Actions获取详细信息。
+          
+          仓库: ${{ github.repository }}
+          分支: ${{ github.ref }}
+          提交: ${{ github.sha }}
+          运行: ${{ github.run_number }}

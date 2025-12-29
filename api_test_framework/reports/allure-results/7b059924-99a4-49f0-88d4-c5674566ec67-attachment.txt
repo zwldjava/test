@@ -1,0 +1,18 @@
+2025-12-27 16:48:17,610 - core.base_test - INFO - 开始测试: TestPathTraversal
+2025-12-27 16:48:17,611 - core.base_test - INFO - 请求: GET /api/files/../../../etc/passwd
+2025-12-27 16:48:17,993 - core.base_test - INFO - 响应状态: 200
+2025-12-27 16:48:17,994 - core.base_test - INFO - 响应体: <!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Growth-æºè½å¢é¿çåç³»ç»</title>
+    <script type="module" crossorigin src="/assets/index-B1f-LEcp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B3lJ3xki.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+2025-12-27 16:48:18,007 - core.base_test - INFO - 结束测试: TestPathTraversal

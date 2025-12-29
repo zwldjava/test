@@ -1,0 +1,18 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestPathTraversal
+[32mINFO    [0m core.base_test:base_test.py:25 请求: GET /api/files/../../../etc/passwd
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 200
+[32mINFO    [0m core.base_test:base_test.py:36 响应体: <!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Growth-æºè½å¢é¿çåç³»ç»</title>
+    <script type="module" crossorigin src="/assets/index-B1f-LEcp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B3lJ3xki.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestPathTraversal

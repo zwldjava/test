@@ -1,0 +1,2 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestUserRegistration
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestUserRegistration

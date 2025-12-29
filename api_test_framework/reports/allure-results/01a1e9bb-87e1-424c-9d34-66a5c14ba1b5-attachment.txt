@@ -1,0 +1,4 @@
+tests\api\test_login_api.py:214: in test_login_long_username
+    assert response_data["code"] == login_data["expected_code"], f"应该返回输入验证错误，实际返回{response_data['code']}"
+E   AssertionError: 应该返回输入验证错误，实际返回401
+E   assert 401 == 422

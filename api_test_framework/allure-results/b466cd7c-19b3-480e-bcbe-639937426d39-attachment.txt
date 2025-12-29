@@ -1,0 +1,5 @@
+tests\api\test_login_api.py:136: in test_login_wrong_credentials
+    assert response.status_code == 200, "应该返回200状态码"
+E   AssertionError: 应该返回200状态码
+E   assert 401 == 200
+E    +  where 401 = <Response [401]>.status_code

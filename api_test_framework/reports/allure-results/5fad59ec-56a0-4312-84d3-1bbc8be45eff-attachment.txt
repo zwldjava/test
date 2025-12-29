@@ -1,0 +1,6 @@
+2025-12-27 16:48:21,594 - core.base_test - INFO - 开始测试: TestUserLogin
+2025-12-27 16:48:21,596 - core.base_test - INFO - 请求: POST /api/users/register
+2025-12-27 16:48:21,596 - core.base_test - INFO - 请求体: {"username": "taomin", "email": "tao35@example.org", "phone": "15632074127", "name": "钟秀芳", "age": 57, "address": "山西省齐齐哈尔县城北昆明街h座 844854", "avatar": "https://dummyimage.com/570x365"}
+2025-12-27 16:48:21,970 - core.base_test - INFO - 响应状态: 401
+2025-12-27 16:48:21,971 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766825302}
+2025-12-27 16:48:21,983 - core.base_test - INFO - 结束测试: TestUserLogin

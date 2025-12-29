@@ -1,0 +1,3 @@
+tests\api\test_ping.py:54: in test_ping_endpoint
+    self.validator.validate_response_time(response, max_ms=5000)
+E   TypeError: ResponseValidator.validate_response_time() got an unexpected keyword argument 'max_ms'

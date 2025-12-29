@@ -1,0 +1,21 @@
+C:\Users\15071\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:971: in json
+    return complexjson.loads(self.text, **kwargs)
+C:\Users\15071\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py:346: in loads
+    return _default_decoder.decode(s)
+C:\Users\15071\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+C:\Users\15071\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py:363: in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+tests\api\test_ping.py:42: in test_ping_endpoint
+    response_data = response.json()
+C:\Users\15071\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py:975: in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+E   requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+tests\api\test_ping.py:51: in test_ping_endpoint
+    pytest.fail(f"响应不是有效的JSON格式: {e}")
+E   Failed: 响应不是有效的JSON格式: Expecting value: line 1 column 1 (char 0)
