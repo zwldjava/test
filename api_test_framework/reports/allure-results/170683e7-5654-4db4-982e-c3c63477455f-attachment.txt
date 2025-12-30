@@ -1,0 +1,10 @@
+2025-12-29 12:44:07,315 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 12:44:07,315 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 12:44:07,315 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 12:44:07,591 - core.base_test - INFO - 响应状态: 200
+2025-12-29 12:44:07,592 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0NywiZXhwIjoxNzY3MDY5ODQ3fQ.22_B5WafHnxQ-YJTy_nmxUD8ZszDFxkFyjhq_H92bKo", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0NywiZXhwIjoxNzY3NTg4MjQ3fQ.hi5eO_W5-y1KlzSxX3mcHdp5h5Fy32wc2RbslhM03uA", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983448}
+2025-12-29 12:44:07,593 - core.base_test - INFO - 请求: POST /products
+2025-12-29 12:44:07,593 - core.base_test - INFO - 请求体: {"name": "通过以后.", "description": "工作分析首页作品.其他市场如此.\n部门地址是一.大学如果现在等级都是法律可以.\n关系图片到了所有提供电影到了次数.解决介绍在线数据显示上海但是.\n学生一点不是.朋友出现系统留言大小如何查看.\n经济搜索商品环境喜欢功能深圳位置.投资两个搜索规定推荐.\n图片虽然也是密码工程是一.密码到了客户标准没有为了.标准一个质量帖子部分.\n帮助一次孩子.发展查看功能组织都是更多查看环境.显示国家可以.", "price": 131.12, "stock": 0, "category": "表示", "sku": "SKU-8A2E93CE", "active": true}
+2025-12-29 12:44:07,606 - core.base_test - INFO - 响应状态: 404
+2025-12-29 12:44:07,606 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 12:44:07,622 - core.base_test - INFO - 结束测试: TestProductAPI

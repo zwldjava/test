@@ -1,0 +1,10 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestProductAPI
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /auth/login
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 200
+[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjEwNCwiZXhwIjoxNzY3MDgyNTA0fQ.Qg0ekN7vuyL41BfWl-Ob9BWJMZZRv7-7MBKdM9S6wUU", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjEwNCwiZXhwIjoxNzY3NjAwOTA0fQ.Zqeqsh6gKm7N8WRDGfTNXWE1scDayQse3xU1DzvZukQ", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766996105}
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /products
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"name": "只有深圳谢谢方式.", "description": "最新提供的是必须学习.质量完成那些音乐手机主题当前.\n两个必须工具任何根据有关只要.说明登录处理那么功能系统服务.可以之后名称方面记者.\n影响希望技术他们.那么之后一切这种加入密码你们.发布能力什么空间事情认为由于.\n密码标题结果基本.游戏发布非常游戏.\n客户精华世界.\n日本主要管理世界说明系列有些.觉得在线增加显示文章浏览.\n文章评论教育.\n威望事情然后具有科技是否.科技一样看到处理.", "price": 587.87, "stock": 93, "category": "是一", "sku": "SKU-74E8E54A", "active": false}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 404
+[32mINFO    [0m core.base_test:base_test.py:36 响应体: Not Found
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestProductAPI

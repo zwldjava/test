@@ -1,0 +1,8 @@
+tests\api\test_wo_api.py:220: in test_wo_api
+    self._run_validations(response, test_case["request"], test_case["validations"])
+tests\api\test_wo_api.py:162: in _run_validations
+    self._validate_message_contains(response, validation["expected"])
+tests\api\test_wo_api.py:75: in _validate_message_contains
+    assert expected in response_data["message"], f"响应消息应该包含'{expected}'，实际为'{response_data['message']}'"
+E   AssertionError: 响应消息应该包含'说明'，实际为'表单数据验证失败: 字段 "商品主图" 为必填项'
+E   assert '说明' in '表单数据验证失败: 字段 "商品主图" 为必填项'

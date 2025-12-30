@@ -1,0 +1,3 @@
+E   AssertionError: 路径遍历防护失败，状态码: 200
+    assert 200 in [400, 403, 404]
+     +  where 200 = <Response [200]>.status_code

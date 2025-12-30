@@ -1,0 +1,10 @@
+2025-12-29 12:46:51,134 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 12:46:51,135 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 12:46:51,136 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 12:46:51,375 - core.base_test - INFO - 响应状态: 200
+2025-12-29 12:46:51,375 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzYxMSwiZXhwIjoxNzY3MDcwMDExfQ.h-MIqSn6kAGqnkRHsQT3wswuvHNvdD1ejRbkC3i01QA", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzYxMSwiZXhwIjoxNzY3NTg4NDExfQ.SAhY5AMJxQvcHdT3XoGpaUP7FRu8Aa0_bU4Qmsp4JIU", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983612}
+2025-12-29 12:46:51,378 - core.base_test - INFO - 请求: POST /products
+2025-12-29 12:46:51,379 - core.base_test - INFO - 请求体: {"name": "论坛汽车进行注册.", "description": "是否客户一起个人教育.他们系统主题表示.在线设计其实解决为什图片.\n操作注册不是那些.一种这个非常部门虽然联系.经验最新投资日本.\n要求一下之后时间.\n国家学生汽车到了网上中国.重要发布一个内容.怎么操作这种管理最后.\n之后操作游戏.地区根据部分内容等级城市游戏.服务必须电话音乐同时技术.\n包括看到不要影响因此一种.帖子研究音乐类别大小只要.生产无法选择社会.", "price": 922.02, "stock": 40, "category": "网站", "sku": "SKU-9A9A91EF", "active": true}
+2025-12-29 12:46:51,390 - core.base_test - INFO - 响应状态: 404
+2025-12-29 12:46:51,391 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 12:46:51,405 - core.base_test - INFO - 结束测试: TestProductAPI

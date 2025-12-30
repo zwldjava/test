@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试报告 - Allure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        .stat-card h3 {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .stat-card .number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-card.total .number { color: #667eea; }
+        .stat-card.passed .number { color: #28a745; }
+        .stat-card.failed .number { color: #dc3545; }
+        .stat-card.broken .number { color: #ffc107; }
+        .stat-card.skipped .number { color: #6c757d; }
+        .progress {
+            padding: 30px;
+        }
+        .progress-bar {
+            height: 30px;
+            background: #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+        }
+        .progress-segment {
+            height: 100%;
+            transition: width 0.5s;
+        }
+        .progress-segment.passed { background: #28a745; }
+        .progress-segment.failed { background: #dc3545; }
+        .progress-segment.broken { background: #ffc107; }
+        .progress-segment.skipped { background: #6c757d; }
+        .test-cases {
+            padding: 30px;
+        }
+        .test-cases h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .test-case {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .test-case:hover {
+            background: #e9ecef;
+        }
+        .test-case.passed { border-left-color: #28a745; }
+        .test-case.failed { border-left-color: #dc3545; }
+        .test-case.broken { border-left-color: #ffc107; }
+        .test-case.skipped { border-left-color: #6c757d; }
+        .test-case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .test-case-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .test-case-status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .test-case-status.passed { background: #d4edda; color: #155724; }
+        .test-case-status.failed { background: #f8d7da; color: #721c24; }
+        .test-case-status.broken { background: #fff3cd; color: #856404; }
+        .test-case-status.skipped { background: #e2e3e5; color: #383d41; }
+        .test-case-details {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .test-case-error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 测试报告</h1>
+            <p>生成时间: 2025-12-30 11:40:47</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card total">
+                <h3>总计</h3>
+                <div class="number">60</div>
+            </div>
+            <div class="stat-card passed">
+                <h3>通过</h3>
+                <div class="number">0</div>
+            </div>
+            <div class="stat-card failed">
+                <h3>失败</h3>
+                <div class="number">60</div>
+            </div>
+            <div class="stat-card broken">
+                <h3>损坏</h3>
+                <div class="number">0</div>
+            </div>
+            <div class="stat-card skipped">
+                <h3>跳过</h3>
+                <div class="number">0</div>
+            </div>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-segment passed" style="width: 0.0%"></div>
+                <div class="progress-segment failed" style="width: 100.0%"></div>
+                <div class="progress-segment broken" style="width: 0.0%"></div>
+                <div class="progress-segment skipped" style="width: 0.0%"></div>
+            </div>
+        </div>
+        
+        <div class="test-cases">
+            <h2>测试用例详情</h2>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.shop_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">空description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">正常创建工单-完整参数</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应码应该为200，实际为400
+assert 400 == 200</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">空description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">正常创建工单-完整参数</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应码应该为200，实际为400
+assert 400 == 200</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">空description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">无效template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板不存在'，实际为'工单只能在组织中创建'
+assert '模板不存在' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID不能为空'，实际为'工单只能在组织中创建'
+assert '商品ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">无效template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板不存在'，实际为'工单只能在组织中创建'
+assert '模板不存在' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">空description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少认证信息</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为401
+assert 401 == 200
+ +  where 401 = <Response [401]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">XSS攻击-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述包含非法字符'，实际为'工单只能在组织中创建'
+assert '描述包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板ID不能为空'，实际为'工单只能在组织中创建'
+assert '模板ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">正常创建工单-完整参数</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应码应该为200，实际为400
+assert 400 == 200</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板ID不能为空'，实际为'工单只能在组织中创建'
+assert '模板ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">无效template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板不存在'，实际为'工单只能在组织中创建'
+assert '模板不存在' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID不能为空'，实际为'工单只能在组织中创建'
+assert '商品ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.shop_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'店铺ID不能为空'，实际为'工单只能在组织中创建'
+assert '店铺ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'扩展数据不能为空'，实际为'工单只能在组织中创建'
+assert '扩展数据不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.items</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品规格不能为空'，实际为'工单只能在组织中创建'
+assert '商品规格不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少认证信息</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为401
+assert 401 == 200
+ +  where 401 = <Response [401]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">正常创建工单-完整参数</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板ID不能为空'，实际为'工单只能在组织中创建'
+assert '模板ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少认证信息</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为401
+assert 401 == 200
+ +  where 401 = <Response [401]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少认证信息</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为401
+assert 401 == 200
+ +  where 401 = <Response [401]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">SQL注入攻击-product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID包含非法字符'，实际为'工单只能在组织中创建'
+assert '商品ID包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">XSS攻击-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述包含非法字符'，实际为'工单只能在组织中创建'
+assert '描述包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.items</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.shop_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'店铺ID不能为空'，实际为'工单只能在组织中创建'
+assert '店铺ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">无效template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.items</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品规格不能为空'，实际为'工单只能在组织中创建'
+assert '商品规格不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'扩展数据不能为空'，实际为'工单只能在组织中创建'
+assert '扩展数据不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">无效template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板不存在'，实际为'工单只能在组织中创建'
+assert '模板不存在' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID不能为空'，实际为'工单只能在组织中创建'
+assert '商品ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID不能为空'，实际为'工单只能在组织中创建'
+assert '商品ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">XSS攻击-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-template_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'模板ID不能为空'，实际为'工单只能在组织中创建'
+assert '模板ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">SQL注入攻击-product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID包含非法字符'，实际为'工单只能在组织中创建'
+assert '商品ID包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">正常创建工单-完整参数</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应码应该为200，实际为400
+assert 400 == 200</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.items</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品规格不能为空'，实际为'工单只能在组织中创建'
+assert '商品规格不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">SQL注入攻击-product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID包含非法字符'，实际为'工单只能在组织中创建'
+assert '商品ID包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">SQL注入攻击-product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为404
+assert 404 == 200
+ +  where 404 = <Response [404]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.items</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品规格不能为空'，实际为'工单只能在组织中创建'
+assert '商品规格不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">SQL注入攻击-product_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'商品ID包含非法字符'，实际为'工单只能在组织中创建'
+assert '商品ID包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'扩展数据不能为空'，实际为'工单只能在组织中创建'
+assert '扩展数据不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'扩展数据不能为空'，实际为'工单只能在组织中创建'
+assert '扩展数据不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.shop_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'店铺ID不能为空'，实际为'工单只能在组织中创建'
+assert '店铺ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少必填字段-extra_data.shop_id</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'店铺ID不能为空'，实际为'工单只能在组织中创建'
+assert '店铺ID不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">空description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述不能为空'，实际为'工单只能在组织中创建'
+assert '描述不能为空' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">XSS攻击-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述包含非法字符'，实际为'工单只能在组织中创建'
+assert '描述包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">缺少认证信息</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 状态码应该为200，实际为401
+assert 401 == 200
+ +  where 401 = <Response [401]>.status_code</div>
+
+            </div>
+
+            <div class="test-case failed">
+                <div class="test-case-header">
+                    <div class="test-case-name">XSS攻击-description</div>
+                    <div class="test-case-status failed">failed</div>
+                </div>
+                <div class="test-case-details">
+                    耗时: 0.00s
+                </div>
+
+                <div class="test-case-error">AssertionError: 响应消息应该包含'描述包含非法字符'，实际为'工单只能在组织中创建'
+assert '描述包含非法字符' in '工单只能在组织中创建'</div>
+
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>由 Allure 测试框架生成 | 共 60 个测试用例</p>
+        </div>
+    </div>
+</body>
+</html>

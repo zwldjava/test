@@ -1,0 +1,299 @@
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行测试用例 [7]: 08-响应时间测试
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 功能: 工单管理
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 场景: 创建工单接口
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 严重级别: normal
+2025-12-30 10:08:35,781 - api_test_framework.tests.api.test_wo_api - INFO - 标签: smoke, api, wo, performance
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:35,782 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,083 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,083 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,083 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,083 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 299.63ms
+2025-12-30 10:08:36,083 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - 执行响应时间测试 - 迭代次数: 5, 最大平均时间: 2000ms, 最大时间: 5000ms
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:36,090 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,105 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,105 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,105 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,105 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 13.79ms
+2025-12-30 10:08:36,106 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,106 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,106 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:36,106 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:36,107 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:36,107 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,121 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,121 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,121 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,121 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 13.27ms
+2025-12-30 10:08:36,121 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,122 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,122 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:36,122 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:36,122 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:36,122 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,136 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,136 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,137 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,137 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 13.25ms
+2025-12-30 10:08:36,137 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,138 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,139 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:36,139 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:36,139 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:36,139 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,157 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,157 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,157 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,157 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 17.14ms
+2025-12-30 10:08:36,157 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,158 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,158 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:08:36,158 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:08:36,158 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:08:36,158 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "product_id": "763667767586",
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:08:36,172 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:08:36,172 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:08:36 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "122",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:08:36,172 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品主图\" 为必填项",
+  "timestamp": 1767060517
+}
+2025-12-30 10:08:36,172 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 13.07ms
+2025-12-30 10:08:36,173 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:08:36,173 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间统计 - 平均: 14.10ms, 最大: 17.14ms, 最小: 13.07ms
+2025-12-30 10:08:36,174 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间验证通过
+2025-12-30 10:08:36,174 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:08:36,174 - api_test_framework.tests.api.test_wo_api - INFO - 测试用例 [7]: 08-响应时间测试 执行完成
+2025-12-30 10:08:36,174 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+

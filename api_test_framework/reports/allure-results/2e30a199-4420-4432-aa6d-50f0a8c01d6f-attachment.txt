@@ -1,0 +1,10 @@
+INFO     core.base_test:base_test.py:19 开始测试: TestProductAPI
+INFO     core.base_test:base_test.py:25 请求: POST /auth/login
+INFO     core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+INFO     core.base_test:base_test.py:32 响应状态: 200
+INFO     core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzUzMSwiZXhwIjoxNzY3MDY5OTMxfQ.3bBaGIct3-YhuhYFaRbJHE8kbQHa37QgZo0KHBRo5vA", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzUzMSwiZXhwIjoxNzY3NTg4MzMxfQ.d816FoddaAFiPxlSQzlmA1RK5VyuBlXRRdxFv3d-d74", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983532}
+INFO     core.base_test:base_test.py:25 请求: POST /products
+INFO     core.base_test:base_test.py:29 请求体: {"name": "留言今年什么现在.", "description": "公司信息过程语言.事情评论上海孩子看到.您的新闻论坛任何还是这么.\n最大提供软件论坛.一起那个这种不断设计.影响的人的话.\n积分历史然后一般孩子科技.还有部门结果因为就是详细都是.最新没有有些之后生产只要.显示可能电影网上.\n阅读孩子精华更新发现密码学习.不是管理文章这种我的实现加入.应用其中如何目前.美国发现完成正在.\n文化电话在线注意.处理起来威望情况注册.支持学生虽然那些这种有些汽车.", "price": 277.01, "stock": 76, "category": "操作", "sku": "SKU-B570C36E", "active": true}
+INFO     core.base_test:base_test.py:32 响应状态: 404
+INFO     core.base_test:base_test.py:36 响应体: Not Found
+INFO     core.base_test:base_test.py:22 结束测试: TestProductAPI

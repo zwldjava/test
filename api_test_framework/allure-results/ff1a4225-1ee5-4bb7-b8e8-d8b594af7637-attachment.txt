@@ -1,0 +1,8 @@
+tests\api\test_wo_api.py:183: in test_wo_api
+    self._run_validations(response, test_case["request"], test_case["validations"])
+tests\api\test_wo_api.py:133: in _run_validations
+    self._validate_message_contains(response, validation["expected"])
+tests\api\test_wo_api.py:60: in _validate_message_contains
+    assert expected in response_data["message"], f"响应消息应该包含'{expected}'，实际为'{response_data['message']}'"
+E   AssertionError: 响应消息应该包含'商品ID不能为空'，实际为'工单只能在组织中创建'
+E   assert '商品ID不能为空' in '工单只能在组织中创建'

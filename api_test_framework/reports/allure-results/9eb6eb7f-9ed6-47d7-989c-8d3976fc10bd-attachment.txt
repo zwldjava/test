@@ -1,0 +1,5 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestAuthBypass
+[32mINFO    [0m core.base_test:base_test.py:25 请求: GET /api/users/me
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 401
+[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766996109}
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestAuthBypass

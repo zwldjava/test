@@ -1,0 +1,1 @@
+{'method': 'POST', 'endpoint': '/wo', 'headers': {'Authorization': 'Bearer {token}', 'Org-Id': '1'}, 'body': {'description': '工单说明\n', 'template_id': 1, 'attachs': []}}

@@ -1,0 +1,2 @@
+E   AssertionError: 响应码应该为400，实际为200
+    assert 200 == 400

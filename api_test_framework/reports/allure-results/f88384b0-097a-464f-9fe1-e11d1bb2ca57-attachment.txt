@@ -1,0 +1,10 @@
+2025-12-29 16:13:24,677 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 16:13:24,678 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 16:13:24,678 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 16:13:24,992 - core.base_test - INFO - 响应状态: 200
+2025-12-29 16:13:24,992 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNCwiZXhwIjoxNzY3MDgyNDA0fQ.hYpMS6bq74MZv8p8Wc7R3PZxP2OAoGU2xUJ_rsgPGmU", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNCwiZXhwIjoxNzY3NjAwODA0fQ.w7fS_TChDZmNPfqG_lE12pqYlxVL1K7shswz2Bk7sGA", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766996005}
+2025-12-29 16:13:24,997 - core.base_test - INFO - 请求: POST /products
+2025-12-29 16:13:24,997 - core.base_test - INFO - 请求体: {"name": "表示我们加入.", "description": "你的怎么安全为什程序阅读.加入文件以下名称客户中国.\n投资控制联系出现.阅读一些广告研究投资看到注册.\n一下这些一起任何信息商品个人得到.中文等级为什发展.只有虽然今天现在孩子.\n以后部门类型环境.觉得环境他的语言.注意管理发展阅读.\n技术准备我的帮助以及当然.发展作者解决更新.\n学校功能实现状态运行.过程不会成为更新项目这些.企业起来也是的话法律作者时候这个.\n电脑地址作者问题工作但是注意.", "price": 524.37, "stock": 58, "category": "不是", "sku": "SKU-5239A377", "active": true}
+2025-12-29 16:13:25,009 - core.base_test - INFO - 响应状态: 404
+2025-12-29 16:13:25,010 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 16:13:25,025 - core.base_test - INFO - 结束测试: TestProductAPI

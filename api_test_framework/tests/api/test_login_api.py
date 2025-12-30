@@ -1,7 +1,7 @@
 import pytest
 import allure
+import concurrent.futures
 from core.http_client import HTTPClient
-from core.validator import ResponseValidator
 from core.security_checker import SecurityChecker
 from utils.data_reader import data_reader
 
@@ -13,259 +13,144 @@ class TestLoginAPI:
     @pytest.fixture(autouse=True)
     def setup(self):
         self.client = HTTPClient()
-        self.validator = ResponseValidator()
         self.security_checker = SecurityChecker()
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试正常登录")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_success(self):
-        login_data = data_reader.get_login_data("success")
-        
-        with allure.step("使用正确的手机号密码登录"):
-            request_data = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=request_data)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证响应状态码"):
-            assert response.status_code == 200, f"应该返回200状态码，实际返回{response.status_code}"
-
-        with allure.step("验证登录成功"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回{login_data['expected_code']}成功码，实际返回{response_data['code']}"
-            assert "access_token" in response_data["data"] or "token" in response_data["data"], "应该返回access_token或token"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试空请求体")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_empty_body(self):
-        login_data = data_reader.get_login_data("empty_body")
-        
-        with allure.step("发送空请求体"):
-            response = self.client.post("/auth/login", json={})
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证响应状态码"):
-            assert response.status_code == 200, "应该返回200状态码"
-
-        with allure.step("验证错误提示"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回{login_data['expected_code']}错误码"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试只有手机号")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_only_phone(self):
-        login_data = data_reader.get_login_data("only_phone")
-        
-        with allure.step("发送只有手机号的请求"):
-            request_data = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=request_data)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证响应状态码"):
-            assert response.status_code == 200, "应该返回200状态码"
-
-        with allure.step("验证错误提示"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回{login_data['expected_code']}错误码"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试只有密码")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_only_password(self):
-        login_data = data_reader.get_login_data("only_password")
-        
-        with allure.step("发送只有密码的请求"):
-            request_data = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=request_data)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证响应状态码"):
-            assert response.status_code == 200, "应该返回200状态码"
-
-        with allure.step("验证错误提示"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回{login_data['expected_code']}错误码"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试错误的用户名密码")
-    @allure.severity(allure.severity_level.NORMAL)
-    def test_login_wrong_credentials(self):
-        login_data = data_reader.get_login_data("wrong_credentials")
-        
-        with allure.step("发送错误的手机号密码"):
-            request_data = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/api/auth/login", json=request_data)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证响应状态码"):
-            assert response.status_code == 200, "应该返回200状态码"
-
-        with allure.step("验证错误提示"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回{login_data['expected_code']}错误码"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试SQL注入攻击")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_sql_injection(self):
-        login_data = data_reader.get_login_data("sql_injection")
-        
-        with allure.step("发送SQL注入载荷"):
-            sql_payload = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=sql_payload)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证SQL注入防护"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], "SQL注入应该被阻止"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-        with allure.step("安全检查"):
-            vulnerabilities = self.security_checker.check_sql_injection(sql_payload)
+    
+    @classmethod
+    def setup_class(cls):
+        cls.test_cases = data_reader.read_yaml("login_data.yaml")["test_cases"]
+    
+    def _execute_request(self, request_data):
+        if request_data["method"] == "POST":
+            return self.client.post(request_data["endpoint"], json=request_data["body"])
+        elif request_data["method"] == "GET":
+            return self.client.get(request_data["endpoint"], params=request_data["body"])
+        elif request_data["method"] == "PUT":
+            return self.client.put(request_data["endpoint"], json=request_data["body"])
+        elif request_data["method"] == "DELETE":
+            return self.client.delete(request_data["endpoint"], json=request_data["body"])
+    
+    def _validate_status_code(self, response, expected):
+        assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+    
+    def _validate_response_code(self, response, expected):
+        response_data = response.json()
+        assert response_data["code"] == expected, f"响应码应该为{expected}，实际为{response_data['code']}"
+    
+    def _validate_message_contains(self, response, expected):
+        response_data = response.json()
+        assert expected in response_data["message"], f"响应消息应该包含'{expected}'，实际为'{response_data['message']}'"
+    
+    def _validate_has_token(self, response, expected):
+        response_data = response.json()
+        has_token = "access_token" in response_data["data"] or "token" in response_data["data"]
+        assert has_token == expected, f"token存在性应该为{expected}"
+    
+    def _validate_security_check(self, request_data, check_type, field):
+        field_value = request_data["body"][field]
+        if check_type == "sql_injection":
+            vulnerabilities = self.security_checker.check_sql_injection(request_data["body"])
             assert len(vulnerabilities) > 0, "应该检测到SQL注入载荷"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试XSS攻击")
-    @allure.severity(allure.severity_level.CRITICAL)
-    def test_login_xss_attack(self):
-        login_data = data_reader.get_login_data("xss_attack")
-        
-        with allure.step("发送XSS载荷"):
-            xss_payload = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=xss_payload)
-            
-            allure.attach(
-                response.text,
-                name="响应内容",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证XSS防护"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], "XSS应该被阻止"
-            assert login_data["expected_message"] in response_data["message"], f"应该提示{login_data['expected_message']}"
-
-        with allure.step("安全检查"):
-            vulnerabilities = self.security_checker.check_xss(xss_payload)
+        elif check_type == "xss":
+            vulnerabilities = self.security_checker.check_xss(request_data["body"])
             assert len(vulnerabilities) > 0, "应该检测到XSS载荷"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试超长用户名")
-    @allure.severity(allure.severity_level.NORMAL)
-    def test_login_long_username(self):
-        login_data = data_reader.get_login_data("long_username")
-        
-        with allure.step("发送超长用户名"):
-            long_payload = {"phone": login_data["phone"], "password": login_data["password"]}
-            response = self.client.post("/auth/login", json=long_payload)
+    
+    def _validate_response_time(self, request_data, max_avg_time, max_time, iterations=5):
+        response_times = []
+        for i in range(iterations):
+            response = self._execute_request(request_data)
+            response_time_ms = response.elapsed.total_seconds() * 1000
+            response_times.append(response_time_ms)
             
             allure.attach(
-                response.text,
-                name="响应内容",
+                f"请求 {i+1}: {response_time_ms:.2f}ms",
+                name="响应时间",
                 attachment_type=allure.attachment_type.TEXT
             )
-
-        with allure.step("验证输入验证"):
-            response_data = response.json()
-            assert response_data["code"] == login_data["expected_code"], f"应该返回输入验证错误，实际返回{response_data['code']}"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试响应时间")
-    @allure.severity(allure.severity_level.NORMAL)
-    def test_login_response_time(self):
-        login_data = data_reader.get_login_data("response_time")
         
-        with allure.step("多次请求测试响应时间"):
-            response_times = []
-            for i in range(login_data["iterations"]):
-                response = self.client.post("/auth/login", json={"phone": login_data["phone"], "password": login_data["password"]})
-                response_time_ms = response.elapsed.total_seconds() * 1000
-                response_times.append(response_time_ms)
-                
-                allure.attach(
-                    f"请求 {i+1}: {response_time_ms:.2f}ms",
-                    name="响应时间",
-                    attachment_type=allure.attachment_type.TEXT
+        avg_time = sum(response_times) / len(response_times)
+        max_actual_time = max(response_times)
+        
+        allure.attach(
+            f"平均: {avg_time:.2f}ms, 最大: {max_actual_time:.2f}ms",
+            name="响应时间统计",
+            attachment_type=allure.attachment_type.TEXT
+        )
+        
+        assert avg_time < max_avg_time, f"平均响应时间过长: {avg_time:.2f}ms"
+        assert max_actual_time < max_time, f"最大响应时间过长: {max_actual_time:.2f}ms"
+    
+    def _validate_concurrent_success(self, request_data, expected_success_count, concurrent_count=10):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=concurrent_count) as executor:
+            futures = [executor.submit(self._execute_request, request_data) for _ in range(concurrent_count)]
+            responses = [future.result() for future in concurrent.futures.as_completed(futures)]
+        
+        success_count = sum(1 for r in responses if r.status_code == 200)
+        
+        allure.attach(
+            f"成功: {success_count}/{concurrent_count}",
+            name="并发请求结果",
+            attachment_type=allure.attachment_type.TEXT
+        )
+        
+        assert success_count == expected_success_count, f"部分请求失败: {success_count}/{concurrent_count}"
+    
+    def _run_validations(self, response, request_data, validations):
+        for validation in validations:
+            validation_type = validation["type"]
+            
+            if validation_type == "status_code":
+                self._validate_status_code(response, validation["expected"])
+            elif validation_type == "response_code":
+                self._validate_response_code(response, validation["expected"])
+            elif validation_type == "message_contains":
+                self._validate_message_contains(response, validation["expected"])
+            elif validation_type == "has_token":
+                self._validate_has_token(response, validation["expected"])
+            elif validation_type == "security_check":
+                self._validate_security_check(request_data, validation["check_type"], validation["field"])
+            elif validation_type == "response_time":
+                self._validate_response_time(
+                    request_data, 
+                    validation["max_avg_time"], 
+                    validation["max_time"], 
+                    request_data.get("iterations", 5)
                 )
-
-        with allure.step("验证平均响应时间"):
-            avg_time = sum(response_times) / len(response_times)
-            max_time = max(response_times)
-            
-            allure.attach(
-                f"平均: {avg_time:.2f}ms, 最大: {max_time:.2f}ms",
-                name="响应时间统计",
-                attachment_type=allure.attachment_type.TEXT
-            )
-            
-            assert avg_time < login_data["max_avg_time"], f"平均响应时间过长: {avg_time:.2f}ms"
-            assert max_time < login_data["max_time"], f"最大响应时间过长: {max_time:.2f}ms"
-
-    @allure.feature("认证")
-    @allure.story("登录接口")
-    @allure.title("测试并发登录请求")
-    @allure.severity(allure.severity_level.NORMAL)
-    def test_login_concurrent_requests(self):
-        import concurrent.futures
-        login_data = data_reader.get_login_data("concurrent_requests")
+            elif validation_type == "concurrent_success":
+                self._validate_concurrent_success(
+                    request_data, 
+                    validation["expected_success_count"], 
+                    request_data.get("concurrent_count", 10)
+                )
+    
+    def _attach_data(self, response, request_data):
+        allure.attach(
+            response.text,
+            name="响应内容",
+            attachment_type=allure.attachment_type.TEXT
+        )
         
-        with allure.step("发送并发请求"):
-            with concurrent.futures.ThreadPoolExecutor(max_workers=login_data["concurrent_count"]) as executor:
-                futures = [executor.submit(self.client.post, "/auth/login", json={"phone": login_data["phone"], "password": login_data["password"]}) for _ in range(login_data["concurrent_count"])]
-                responses = [future.result() for future in concurrent.futures.as_completed(futures)]
+        allure.attach(
+            str(request_data),
+            name="请求数据",
+            attachment_type=allure.attachment_type.JSON
+        )
+    
+    @pytest.mark.parametrize("test_case_index", range(10))
+    def test_login_api(self, test_case_index):
+        test_case = self.test_cases[test_case_index]
+        
+        allure.dynamic.feature(test_case["feature"])
+        allure.dynamic.story(test_case["story"])
+        allure.dynamic.severity(getattr(allure.severity_level, test_case["severity"].upper()))
+        allure.dynamic.title(test_case["name"])
+        
+        for tag in test_case.get("tags", []):
+            allure.dynamic.tag(tag)
+        
+        with allure.step(f"测试用例: {test_case['name']}"):
+            with allure.step("发送请求"):
+                response = self._execute_request(test_case["request"])
+                self._attach_data(response, test_case["request"])
             
-            success_count = sum(1 for r in responses if r.status_code == 200)
-            
-            allure.attach(
-                f"成功: {success_count}/{login_data['concurrent_count']}",
-                name="并发请求结果",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-        with allure.step("验证所有请求都成功"):
-            assert success_count == login_data["expected_success_count"], f"部分请求失败: {success_count}/{login_data['concurrent_count']}"
+            with allure.step("验证响应"):
+                self._run_validations(response, test_case["request"], test_case["validations"])

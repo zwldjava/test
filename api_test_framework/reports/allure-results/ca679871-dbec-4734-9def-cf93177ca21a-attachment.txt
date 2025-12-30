@@ -1,0 +1,10 @@
+2025-12-29 12:44:07,012 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 12:44:07,013 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 12:44:07,014 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 12:44:07,280 - core.base_test - INFO - 响应状态: 200
+2025-12-29 12:44:07,280 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0NywiZXhwIjoxNzY3MDY5ODQ3fQ.22_B5WafHnxQ-YJTy_nmxUD8ZszDFxkFyjhq_H92bKo", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0NywiZXhwIjoxNzY3NTg4MjQ3fQ.hi5eO_W5-y1KlzSxX3mcHdp5h5Fy32wc2RbslhM03uA", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983448}
+2025-12-29 12:44:07,284 - core.base_test - INFO - 请求: POST /products
+2025-12-29 12:44:07,284 - core.base_test - INFO - 请求体: {"name": "深圳拥有显示.", "description": "来自大家一点美国各种地址她的.搜索继续有限一定如果谢谢看到.工程知道最大支持等级.\n查看日本对于这个标题开发.空间注意之间自己电影所以发布.控制就是他的大小评论女人公司.\n事情我们学习用户制作部门广告.最后我们当前名称.\n自己地址以后留言工程.企业质量这里关于方式一定地区.你的各种资源帖子主要中心.\n登录同时孩子一下能够实现评论.建设设备同时.", "price": 403.37, "stock": 33, "category": "报告", "sku": "SKU-807599D3", "active": false}
+2025-12-29 12:44:07,296 - core.base_test - INFO - 响应状态: 404
+2025-12-29 12:44:07,297 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 12:44:07,310 - core.base_test - INFO - 结束测试: TestProductAPI

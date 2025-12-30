@@ -1,0 +1,10 @@
+INFO     core.base_test:base_test.py:19 开始测试: TestProductAPI
+INFO     core.base_test:base_test.py:25 请求: POST /auth/login
+INFO     core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+INFO     core.base_test:base_test.py:32 响应状态: 200
+INFO     core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNSwiZXhwIjoxNzY3MDgyNDA1fQ.1rC-fQ0tgxOrYv6rY7BtG7n3PvLKBY64aqsImdI5WG8", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNSwiZXhwIjoxNzY3NjAwODA1fQ.Tp5YVer2Kv99gMjG1RpelKE-8-0CNfPFr_hPz4SG7U8", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766996006}
+INFO     core.base_test:base_test.py:25 请求: POST /products
+INFO     core.base_test:base_test.py:29 请求体: {"name": "软件销售无法.", "description": "最大简介一下.只要密码学习位置中文中国.欢迎拥有能够管理.\n方式得到方法经济更新为了系列.以上国家的是的人只要.\n一直没有计划的是专业一直.最新认为这是学习如果项目.\n建设以后部分.\n制作发生基本.他们不是表示他们都是.开始作品投资方式资料对于欢迎.\n那个国际之间之间报告一次提供.内容发表制作其实之间能够.那些特别更多各种质量.\n公司数据地区相关可是.这里大小下载解决.\n社区论坛帖子表示.", "price": 532.73, "stock": 53, "category": "深圳", "sku": "SKU-E965EA9C", "active": false}
+INFO     core.base_test:base_test.py:32 响应状态: 404
+INFO     core.base_test:base_test.py:36 响应体: Not Found
+INFO     core.base_test:base_test.py:22 结束测试: TestProductAPI

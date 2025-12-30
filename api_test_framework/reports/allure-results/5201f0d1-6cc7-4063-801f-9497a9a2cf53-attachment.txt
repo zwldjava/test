@@ -1,0 +1,8 @@
+tests\api\test_wo_api.py:220: in test_wo_api
+    self._run_validations(response, test_case["request"], test_case["validations"])
+tests\api\test_wo_api.py:160: in _run_validations
+    self._validate_response_code(response, validation["expected"])
+tests\api\test_wo_api.py:68: in _validate_response_code
+    assert response_data["code"] == expected, f"响应码应该为{expected}，实际为{response_data['code']}"
+E   AssertionError: 响应码应该为400，实际为200
+E   assert 200 == 400

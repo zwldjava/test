@@ -1,6 +1,7 @@
 import allure
 import pytest
 import requests_mock
+from utils.logger import get_logger
 
 from config.settings import config
 from core.http_client import HTTPClient
@@ -62,20 +63,35 @@ def authenticated_client(api_client, auth_token):
 def pytest_runtest_makereport(item, call):
     outcome = yield
     report = outcome.get_result()
+    logger = get_logger(__name__)
 
+    if report.when == "setup":
+        logger.info(f"\n{'#'*80}")
+        logger.info(f"测试开始 - {item.nodeid}")
+        logger.info(f"{'#'*80}\n")
+    
     if report.when == "call":
         if report.failed:
+            logger.error(f"测试失败 - {item.nodeid}")
+            logger.error(f"失败原因: {report.longreprtext}")
             allure.attach(
                 str(report.longreprtext),
                 name="失败信息",
                 attachment_type=allure.attachment_type.TEXT,
             )
+        elif report.passed:
+            logger.info(f"测试通过 - {item.nodeid}")
 
         if hasattr(item, "obj"):
             test_class = item.obj.__class__.__name__
             test_method = item.obj.__name__
             allure.label("testClass", test_class)
             allure.label("testMethod", test_method)
+    
+    if report.when == "teardown":
+        logger.info(f"\n{'#'*80}")
+        logger.info(f"测试结束 - {item.nodeid} - 状态: {report.outcome}")
+        logger.info(f"{'#'*80}\n")
 
 
 def pytest_configure(config):
@@ -87,3 +103,19 @@ def pytest_configure(config):
     config.addinivalue_line("markers", "unit: 单元测试")
     config.addinivalue_line("markers", "slow: 慢速测试")
     config.addinivalue_line("markers", "integration: 集成测试")
+
+
+def pytest_sessionstart(session):
+    logger = get_logger(__name__)
+    logger.info(f"\n{'='*80}")
+    logger.info(f"测试会话开始")
+    logger.info(f"测试配置: {session.config}")
+    logger.info(f"{'='*80}\n")
+
+
+def pytest_sessionfinish(session, exitstatus):
+    logger = get_logger(__name__)
+    logger.info(f"\n{'='*80}")
+    logger.info(f"测试会话结束")
+    logger.info(f"退出状态码: {exitstatus}")
+    logger.info(f"{'='*80}\n")

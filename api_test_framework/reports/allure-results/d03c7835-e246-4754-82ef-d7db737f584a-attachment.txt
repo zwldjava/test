@@ -1,0 +1,10 @@
+INFO     core.base_test:base_test.py:19 开始测试: TestProductAPI
+INFO     core.base_test:base_test.py:25 请求: POST /auth/login
+INFO     core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+INFO     core.base_test:base_test.py:32 响应状态: 200
+INFO     core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NTkzMiwiZXhwIjoxNzY3MDgyMzMyfQ.aDBhDD5WnfRM2SouI2c7CfwhnKDSiwbaWKceuZ7eZ2E", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NTkzMiwiZXhwIjoxNzY3NjAwNzMyfQ.oaLzCjG39xV4qFK2FdFSWZiEDMnI1dh6bHMcLWh0UI8", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766995933}
+INFO     core.base_test:base_test.py:25 请求: POST /products
+INFO     core.base_test:base_test.py:29 请求体: {"name": "主题点击有限.", "description": "选择显示合作注意关系城市.\n也是设计文章影响希望人员产品.加入人民技术谢谢人员因为系统.\n自己设备最大品牌注册.免费完全城市相关查看方法原因评论.作者中文为了环境而且经验.帖子标题主要国家.\n阅读作者问题.只要需要方面或者参加看到资料.用户基本那么公司发表比较.不过一直出来相关其他表示.\n她的广告问题事情公司来自影响查看.图片查看工具所以要求系统.标准必须拥有点击价格.", "price": 532.66, "stock": 54, "category": "作为", "sku": "SKU-A1EA7D13", "active": true}
+INFO     core.base_test:base_test.py:32 响应状态: 404
+INFO     core.base_test:base_test.py:36 响应体: Not Found
+INFO     core.base_test:base_test.py:22 结束测试: TestProductAPI

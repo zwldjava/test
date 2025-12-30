@@ -1,0 +1,5 @@
+INFO     core.base_test:base_test.py:19 开始测试: TestSQLInjection
+INFO     core.base_test:base_test.py:25 请求: GET /products?name=1' OR '1'='1
+INFO     core.base_test:base_test.py:32 响应状态: 401
+INFO     core.base_test:base_test.py:34 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983534}
+INFO     core.base_test:base_test.py:22 结束测试: TestSQLInjection

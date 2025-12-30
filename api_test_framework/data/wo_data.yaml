@@ -1,0 +1,301 @@
+test_cases:
+  - name: "01-正常创建工单-完整参数"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 1
+        extra_data:
+          shop_id: 51
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+            - name: "规格2"
+              quantity: 5
+              price: 1000
+              keyword: "关键词2"
+              booking_time: 1767000795
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 200
+      - type: "message_contains"
+        expected: "创建成功"
+      - type: "has_field"
+        field: "data"
+
+
+  - name: "02-description可为空"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: ""
+        template_id: 1
+        extra_data:
+          shop_id: 51
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 200
+      - type: "message_contains"
+        expected: "创建成功"
+      - type: "has_field"
+        field: "data"
+
+  - name: "03-缺少必填字段-template_id"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        extra_data:
+          shop_id: 51
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 400
+      - type: "message_contains"
+        expected: "模板不存在"
+
+  - name: "04-缺少必填字段-extra_data"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 1
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 400
+      - type: "message_contains"
+        expected: "表单数据不能为空"
+
+  - name: "05-缺少必填字段-extra_data.shop_id"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 1
+        extra_data:
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 400
+      - type: "message_contains"
+        expected: "店铺"
+
+  - name: "06-缺少必填字段-extra_data.product_id"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "critical"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 1
+        extra_data:
+          shop_id: 51
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 400
+      - type: "message_contains"
+        expected: "商品ID"
+
+
+  - name: "07-无效template_id"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "normal"
+    tags: ["smoke", "api", "wo"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 999999
+        extra_data:
+          shop_id: 51
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_main_img: "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    validations:
+      - type: "status_code"
+        expected: 200
+      - type: "response_code"
+        expected: 400
+      - type: "message_contains"
+        expected: "模板不存在"
+
+
+  - name: "08-响应时间测试"
+    feature: "工单管理"
+    story: "创建工单接口"
+    severity: "normal"
+    tags: ["smoke", "api", "wo", "performance"]
+    request:
+      method: "POST"
+      endpoint: "/wo"
+      headers:
+        Authorization: "Bearer {token}"
+      body:
+        description: "工单说明\n"
+        template_id: 1
+        extra_data:
+          shop_id: 51
+          product_id: "763667767586"
+          completion_days: "12"
+          items:
+            - name: "规格1"
+              quantity: 5
+              price: 1000
+              keyword: "关键词1"
+              booking_time: 1767000779
+          need_group: 1
+          platform: "taobao"
+          product_name: "测试素材库"
+          product_title: "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店"
+          product_url: "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true"
+          shipping_code: "hf123321123312123321"
+        attachs: []
+    iterations: 5
+    validations:
+      - type: "response_time"
+        max_avg_time: 2000
+        max_time: 5000

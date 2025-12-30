@@ -1,0 +1,10 @@
+2025-12-29 16:12:12,893 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 16:12:12,894 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 16:12:12,894 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 16:12:13,178 - core.base_test - INFO - 响应状态: 200
+2025-12-29 16:12:13,178 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NTkzMiwiZXhwIjoxNzY3MDgyMzMyfQ.aDBhDD5WnfRM2SouI2c7CfwhnKDSiwbaWKceuZ7eZ2E", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NTkzMiwiZXhwIjoxNzY3NjAwNzMyfQ.oaLzCjG39xV4qFK2FdFSWZiEDMnI1dh6bHMcLWh0UI8", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766995933}
+2025-12-29 16:12:13,180 - core.base_test - INFO - 请求: POST /products
+2025-12-29 16:12:13,180 - core.base_test - INFO - 请求体: {"name": "但是自己现在.", "description": "而且一个深圳.如何公司能力现在全国.资料显示浏览资料不要到了注册.\n只是支持进行以上程序得到.大学感觉工具时候主题包括评论.情况工具显示业务.全部安全必须内容帖子应用本站.\n很多法律是否现在.比较单位最新威望.\n开发进行政府注册安全注册一种.以上本站现在游戏拥有电子汽车.\n不同科技最新看到类型根据成为.城市部门国内虽然安全可以.\n不能首页为什学习增加投资这么.制作出现质量如何方法语言汽车.", "price": 843.72, "stock": 9, "category": "最新", "sku": "SKU-4CE92E86", "active": true}
+2025-12-29 16:12:13,192 - core.base_test - INFO - 响应状态: 404
+2025-12-29 16:12:13,192 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 16:12:13,204 - core.base_test - INFO - 结束测试: TestProductAPI

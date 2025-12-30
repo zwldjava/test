@@ -1,0 +1,5 @@
+2025-12-29 12:46:54,685 - core.base_test - INFO - 开始测试: TestAuthBypass
+2025-12-29 12:46:54,686 - core.base_test - INFO - 请求: GET /api/users/me
+2025-12-29 12:46:54,997 - core.base_test - INFO - 响应状态: 401
+2025-12-29 12:46:54,997 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983615}
+2025-12-29 12:46:55,013 - core.base_test - INFO - 结束测试: TestAuthBypass

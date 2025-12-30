@@ -1,0 +1,10 @@
+2025-12-29 16:15:05,208 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 16:15:05,209 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 16:15:05,209 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 16:15:05,478 - core.base_test - INFO - 响应状态: 200
+2025-12-29 16:15:05,478 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjEwNSwiZXhwIjoxNzY3MDgyNTA1fQ.kSKXSjQPLjcvvvGZZgNA2RAty6hzQxdhQro8rRo9TLs", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjEwNSwiZXhwIjoxNzY3NjAwOTA1fQ.d4dX3YnIboVVQnhEFv6Ye7x4_AzD7l-Tbnsr-k63G4g", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766996106}
+2025-12-29 16:15:05,479 - core.base_test - INFO - 请求: POST /products
+2025-12-29 16:15:05,480 - core.base_test - INFO - 请求体: {"name": "是一最大法律音乐.", "description": "关系能够通过不会.之间非常其实工作有限论坛.\n能够能力主题只有社区必须现在.学生中心业务作品日本都是.图片由于这么历史但是.经济来自虽然.\n而且类型比较.电子免费客户城市.软件工作女人学校威望.\n位置支持控制当前功能.各种分析世界地方.\n精华文化要求浏览帮助.首页他们同时操作今天法律成为.由于世界查看事情操作设备今天.\n游戏今天朋友项目名称男人行业.决定成功出现.", "price": 218.02, "stock": 39, "category": "规定", "sku": "SKU-621BBEC4", "active": false}
+2025-12-29 16:15:05,496 - core.base_test - INFO - 响应状态: 404
+2025-12-29 16:15:05,496 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 16:15:05,510 - core.base_test - INFO - 结束测试: TestProductAPI

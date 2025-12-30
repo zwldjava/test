@@ -1,0 +1,67 @@
+2025-12-30 10:06:53,734 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行测试用例 [5]: 06-缺少必填字段-extra_data.product_id
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 功能: 工单管理
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 场景: 创建工单接口
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 严重级别: critical
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 标签: smoke, api, wo
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:06:53,735 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:06:53,736 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "extra_data": {
+    "shop_id": 51,
+    "completion_days": "12",
+    "items": [
+      {
+        "name": "规格1",
+        "quantity": 5,
+        "price": 1000,
+        "keyword": "关键词1",
+        "booking_time": 1767000779
+      }
+    ],
+    "need_group": 1,
+    "platform": "taobao",
+    "product_main_img": "https://img.alicdn.com/imgextra/i3/2456877352/O1CN01MDeq1324BGyVQ9tiK_!!4611686018427386152-0-item_pic.jpg",
+    "product_name": "测试素材库",
+    "product_title": "377美白面膜补水保湿去黄气暗沉淡斑双抗提亮肤色紧致官方旗舰店",
+    "product_url": "https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a21dvs.23580594.0.0.68d6645eb4s6Ko&tradeID=2955418068844113463&snapShot=true",
+    "shipping_code": "hf123321123312123321"
+  },
+  "attachs": []
+}
+2025-12-30 10:06:54,010 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:06:54,010 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:06:54 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "118",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:06:54,010 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据验证失败: 字段 \"商品ID\" 为必填项",
+  "timestamp": 1767060414
+}
+2025-12-30 10:06:54,010 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 273.42ms
+2025-12-30 10:06:54,010 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:06:54,012 - api_test_framework.tests.api.test_wo_api - INFO - 验证状态码 - 预期: 200, 实际: 200
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 状态码验证通过
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 验证响应码 - 预期: 400, 实际: 400
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 响应码验证通过
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 验证响应消息 - 预期包含: '商品ID', 实际: '表单数据验证失败: 字段 "商品ID" 为必填项'
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 响应消息验证通过
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - 测试用例 [5]: 06-缺少必填字段-extra_data.product_id 执行完成
+2025-12-30 10:06:54,013 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+

@@ -1,6 +1,0 @@
-2025-12-27 21:51:32,904 - core.base_test - INFO - 开始测试: TestProductAPI
-2025-12-27 21:51:32,911 - core.base_test - INFO - 请求: POST /users/register
-2025-12-27 21:51:32,911 - core.base_test - INFO - 请求体: {"username": "ntao", "email": "chaozhao@example.net", "phone": "15535092937", "name": "梁红", "age": 57, "address": "河北省畅县吉区南京路e座 758524", "avatar": "https://placekitten.com/393/495"}
-2025-12-27 21:51:33,463 - core.base_test - INFO - 响应状态: 401
-2025-12-27 21:51:33,463 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766843494}
-2025-12-27 21:51:33,494 - core.base_test - INFO - 结束测试: TestProductAPI

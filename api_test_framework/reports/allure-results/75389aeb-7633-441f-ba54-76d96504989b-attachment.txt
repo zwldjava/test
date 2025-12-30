@@ -1,0 +1,10 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestProductAPI
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /auth/login
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 200
+[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQyNiwiZXhwIjoxNzY3MDY5ODI2fQ.VZ_5ihjxEXSaEHhJWhmQmRaGaO3oRK13T-ZaTl4ORjc", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQyNiwiZXhwIjoxNzY3NTg4MjI2fQ.cJQoXCrrJCp00_6xmxdbNX8KySRR0vgh_gu5LCkC8gM", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983427}
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /products
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"name": "图片提高之后.", "description": "显示软件不同工具价格联系.中文成为以及软件中国地方地区.\n关系因此内容注册规定之间.两个所有以及国际为什.方法的人城市这样系列或者.这是一些发生位置通过发表.\n情况标准是否语言继续控制具有.那么的人决定选择如此.\n表示生活起来自己都是可以建设.\n中文主要你的知道还有全部资源.拥有说明你们当然有限之间这是.作品资料这是虽然.\n系列提高公司那么软件.", "price": 239.56, "stock": 32, "category": "这些", "sku": "SKU-403434E6", "active": false}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 404
+[32mINFO    [0m core.base_test:base_test.py:36 响应体: Not Found
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestProductAPI

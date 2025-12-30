@@ -1,0 +1,7 @@
+tests\api\test_product_api.py:52: in test_get_products
+    self.post("/products", json=product_data, expected_status=201)
+core\base_test.py:51: in post
+    self.validator.validate_status_code(response, expected_status)
+core\validator.py:16: in validate_status_code
+    actual_status == expected_status
+E   AssertionError: 状态码不匹配: 期望 201, 实际 404

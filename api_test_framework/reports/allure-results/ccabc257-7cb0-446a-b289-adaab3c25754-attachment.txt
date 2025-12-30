@@ -1,0 +1,10 @@
+INFO     core.base_test:base_test.py:19 开始测试: TestProductAPI
+INFO     core.base_test:base_test.py:25 请求: POST /auth/login
+INFO     core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+INFO     core.base_test:base_test.py:32 响应状态: 200
+INFO     core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NDgyMiwiZXhwIjoxNzY3MDgxMjIyfQ.K4Su928EUUTL6-ZswvGo1XpSxBDmLD_IKBrDIlqNa1c", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NDgyMiwiZXhwIjoxNzY3NTk5NjIyfQ.jr5tG4qqZgoemx7-IbkfNsDnlzc0Q6k51nVA1S21V_4", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766994823}
+INFO     core.base_test:base_test.py:25 请求: POST /products
+INFO     core.base_test:base_test.py:29 请求体: {"name": "而且比较工作.", "description": "感觉汽车感觉大家简介大小不同.这是你们企业社区不同.不要浏览商品.有限特别下载同时.\n不要项目最大比较资料浏览包括这里.\n点击女人美国提供.网站资料论坛因为精华行业已经包括.查看出现这么过程这是一切控制.\n品牌进入提供中国.目前而且上海专业特别中文.\n目前运行影响更新开始.无法不同会员没有的话目前介绍.由于来源规定情况.系列关于报告的是功能今年.", "price": 286.76, "stock": 93, "category": "地区", "sku": "SKU-3B87D7A1", "active": false}
+INFO     core.base_test:base_test.py:32 响应状态: 404
+INFO     core.base_test:base_test.py:36 响应体: Not Found
+INFO     core.base_test:base_test.py:22 结束测试: TestProductAPI

@@ -1,0 +1,10 @@
+2025-12-29 12:44:08,213 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 12:44:08,214 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 12:44:08,214 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 12:44:08,632 - core.base_test - INFO - 响应状态: 200
+2025-12-29 12:44:08,632 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0OCwiZXhwIjoxNzY3MDY5ODQ4fQ.4mB9ZXMteMTzPd2sOyVcIsngsNf8qlL9rMEuaINqzYY", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQ0OCwiZXhwIjoxNzY3NTg4MjQ4fQ.XRU_I94rFDrIYNsinHRoGN3xCIe-fw54Gs8oo0SEFUA", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983449}
+2025-12-29 12:44:08,633 - core.base_test - INFO - 请求: POST /products
+2025-12-29 12:44:08,633 - core.base_test - INFO - 请求体: {"name": "政府质量决定.", "description": "帮助无法我的你的也是查看那个.一般首页管理支持结果最新.\n喜欢那么首页事情比较方法学生.\n游戏环境介绍资源任何查看.空间提供销售准备下载其实结果.最大两个之间作品以后不是.\n关系工作人员然后.时候次数一个电子通过文化文件城市.感觉的是所有标题.\n图片文章的话同时威望教育.开发当然会员空间.\n一点方式设计工具手机经验.文件电子专业信息.", "price": 998.16, "stock": 4, "category": "控制", "sku": "SKU-DC2CFDE0", "active": false}
+2025-12-29 12:44:08,646 - core.base_test - INFO - 响应状态: 404
+2025-12-29 12:44:08,646 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 12:44:08,658 - core.base_test - INFO - 结束测试: TestProductAPI

@@ -1,0 +1,5 @@
+2025-12-29 12:44:11,327 - core.base_test - INFO - 开始测试: TestAPISpecValidation
+2025-12-29 12:44:11,328 - core.base_test - INFO - 请求: GET /products
+2025-12-29 12:44:11,559 - core.base_test - INFO - 响应状态: 401
+2025-12-29 12:44:11,560 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983452}
+2025-12-29 12:44:11,572 - core.base_test - INFO - 结束测试: TestAPISpecValidation

@@ -1,0 +1,47 @@
+2025-12-30 10:06:53,109 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:06:53,110 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行测试用例 [3]: 04-缺少必填字段-extra_data
+2025-12-30 10:06:53,110 - api_test_framework.tests.api.test_wo_api - INFO - 功能: 工单管理
+2025-12-30 10:06:53,110 - api_test_framework.tests.api.test_wo_api - INFO - 场景: 创建工单接口
+2025-12-30 10:06:53,110 - api_test_framework.tests.api.test_wo_api - INFO - 严重级别: critical
+2025-12-30 10:06:53,110 - api_test_framework.tests.api.test_wo_api - INFO - 标签: smoke, api, wo
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - 开始执行请求 - 方法: POST
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - 请求端点: /wo
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - 请求头: {
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDEzLCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjIsInNlbGVjdGVkX3R5cGUiOiJvcmciLCJzZWxlY3RlZF9pZCI6MjE0LCJpYXQiOjE3NjY5OTk5MjgsImV4cCI6MTc2NzA4NjMyOH0.9QA_Z1_7XQ2xvz5J5uoCa0HSA-0zLwUvEuIN8YHhsP8"
+}
+2025-12-30 10:06:53,111 - api_test_framework.tests.api.test_wo_api - INFO - 请求体: {
+  "description": "工单说明\n",
+  "template_id": 1,
+  "attachs": []
+}
+2025-12-30 10:06:53,413 - api_test_framework.tests.api.test_wo_api - INFO - 响应状态码: 200
+2025-12-30 10:06:53,413 - api_test_framework.tests.api.test_wo_api - INFO - 响应头: {
+  "Server": "nginx/1.20.1",
+  "Date": "Tue, 30 Dec 2025 02:06:53 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Content-Length": "84",
+  "Connection": "keep-alive"
+}
+2025-12-30 10:06:53,413 - api_test_framework.tests.api.test_wo_api - INFO - 响应体: {
+  "code": 400,
+  "data": null,
+  "message": "表单数据不能为空",
+  "timestamp": 1767060414
+}
+2025-12-30 10:06:53,414 - api_test_framework.tests.api.test_wo_api - INFO - 响应时间: 300.86ms
+2025-12-30 10:06:53,414 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 验证状态码 - 预期: 200, 实际: 200
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 状态码验证通过
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 验证响应码 - 预期: 400, 实际: 400
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 响应码验证通过
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 验证响应消息 - 预期包含: '表单数据不能为空', 实际: '表单数据不能为空'
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 响应消息验证通过
+2025-12-30 10:06:53,415 - api_test_framework.tests.api.test_wo_api - INFO - 
+================================================================================
+2025-12-30 10:06:53,416 - api_test_framework.tests.api.test_wo_api - INFO - 测试用例 [3]: 04-缺少必填字段-extra_data 执行完成
+2025-12-30 10:06:53,416 - api_test_framework.tests.api.test_wo_api - INFO - ================================================================================
+

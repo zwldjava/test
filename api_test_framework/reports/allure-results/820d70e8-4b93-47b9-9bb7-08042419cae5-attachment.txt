@@ -1,0 +1,10 @@
+[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestProductAPI
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /auth/login
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 200
+[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQyNSwiZXhwIjoxNzY3MDY5ODI1fQ.Oqh6OfhSiptHWRKNKo0EcOXLkUGOdsz25Qr9BW1ncsI", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzQyNSwiZXhwIjoxNzY3NTg4MjI1fQ.Rf-Fb9fyj3CIQjs5zJwb8HAG8Fh-JXpcgbnwXNh5R3o", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983426}
+[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /products
+[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"name": "商品标题出来.", "description": "她的能够发生组织包括解决由于电话.图片电影时间教育.\n他的怎么要求他们一样学生全部.日期新闻开始得到生活你们过程联系.这么问题成功事情然后就是方式加入.\n不是任何其他.她的行业地方同时.\n包括更新作者阅读简介为了我的其实.具有广告城市深圳的是类别显示.点击已经密码首页今年政府市场.\n作品地区觉得怎么文件历史得到.增加成功问题位置都是现在可能.\n处理说明威望具有这里.建设会员来源精华很多.", "price": 127.94, "stock": 30, "category": "大学", "sku": "SKU-A0FC5B26", "active": false}
+[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 404
+[32mINFO    [0m core.base_test:base_test.py:36 响应体: Not Found
+[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestProductAPI

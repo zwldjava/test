@@ -1,0 +1,5 @@
+tests\api\test_security.py:162: in test_path_traversal
+    assert response.status_code in [
+E   AssertionError: 路径遍历防护失败，状态码: 200
+E   assert 200 in [400, 403, 404]
+E    +  where 200 = <Response [200]>.status_code

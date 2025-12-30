@@ -1,0 +1,51 @@
+self = <api_test_framework.tests.api.test_wo_api.TestWoAPI object at 0x000001DB6C90A210>
+test_case_index = 1
+
+    @pytest.mark.parametrize("test_case_index", range(12))
+    def test_wo_api(self, test_case_index):
+        test_case = self.test_cases[test_case_index]
+    
+        allure.dynamic.feature(test_case["feature"])
+        allure.dynamic.story(test_case["story"])
+        allure.dynamic.severity(getattr(allure.severity_level, test_case["severity"].upper()))
+        allure.dynamic.title(test_case["name"])
+    
+        for tag in test_case.get("tags", []):
+            allure.dynamic.tag(tag)
+    
+        with allure.step(f"测试用例: {test_case['name']}"):
+            with allure.step("发送请求"):
+                response = self._execute_request(test_case["request"])
+                self._attach_data(response, test_case["request"])
+    
+            with allure.step("验证响应"):
+>               self._run_validations(response, test_case["request"], test_case["validations"])
+
+tests\api\test_wo_api.py:174: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <api_test_framework.tests.api.test_wo_api.TestWoAPI object at 0x000001DB6C90A210>
+response = <Response [401]>
+request_data = {'body': {'attachs': [], 'description': '工单说明\n', 'extra_data': {'completion_days': '12', 'items': [{'booking_time': 1...}], 'need_group': 1, 'platform': 'taobao', ...}, 'template_id': 1}, 'endpoint': '/wo', 'headers': {}, 'method': 'POST'}
+validations = [{'expected': 200, 'type': 'status_code'}, {'expected': 401, 'type': 'response_code'}, {'expected': '缺少认证信息', 'type': 'message_contains'}]
+
+    def _run_validations(self, response, request_data, validations):
+        for validation in validations:
+            validation_type = validation["type"]
+    
+            if validation_type == "status_code":
+>               self._validate_status_code(response, validation["expected"])
+
+tests\api\test_wo_api.py:120: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <api_test_framework.tests.api.test_wo_api.TestWoAPI object at 0x000001DB6C90A210>
+response = <Response [401]>, expected = 200
+
+    def _validate_status_code(self, response, expected):
+>       assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E       AssertionError: 状态码应该为200，实际为401
+E       assert 401 == 200
+E        +  where 401 = <Response [401]>.status_code
+
+tests\api\test_wo_api.py:43: AssertionError

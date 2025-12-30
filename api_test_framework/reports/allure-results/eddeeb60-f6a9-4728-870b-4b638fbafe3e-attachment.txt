@@ -1,0 +1,10 @@
+2025-12-29 16:13:26,026 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 16:13:26,026 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 16:13:26,026 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 16:13:26,316 - core.base_test - INFO - 响应状态: 200
+2025-12-29 16:13:26,316 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNiwiZXhwIjoxNzY3MDgyNDA2fQ.tf4-TzsWMJAraKzJuXU_QSd8TiyHH8cSwDr7M8IPZus", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk5NjAwNiwiZXhwIjoxNzY3NjAwODA2fQ.-KZTiV6oNAqx3wcQYJ0msPus-d4LG0zf392ADgNJyXQ", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766996007}
+2025-12-29 16:13:26,317 - core.base_test - INFO - 请求: POST /products
+2025-12-29 16:13:26,317 - core.base_test - INFO - 请求体: {"name": "文章客户他们内容.", "description": "不要软件继续方法东西出现电子类别.方面电话过程商品人员.\n责任已经的是情况.他们计划作为基本论坛.\n部门这是一起.责任环境业务.\n没有如果设备广告出来企业.欢迎价格发现网上出现.\n是否地方处理拥有.任何会员能够不断影响关于城市.方面东西你们那么知道只有.\n还有我们安全有些一下重要一点.一直电影为了国际.\n需要显示怎么认为.网络来自有限过程网站安全两个.\n之间北京帮助当前.拥有以下以下其中不能.", "price": 669.18, "stock": 47, "category": "虽然", "sku": "SKU-262CDF5F", "active": true}
+2025-12-29 16:13:26,329 - core.base_test - INFO - 响应状态: 404
+2025-12-29 16:13:26,329 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 16:13:26,342 - core.base_test - INFO - 结束测试: TestProductAPI

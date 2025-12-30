@@ -1,0 +1,10 @@
+2025-12-29 12:46:52,263 - core.base_test - INFO - 开始测试: TestProductAPI
+2025-12-29 12:46:52,264 - core.base_test - INFO - 请求: POST /auth/login
+2025-12-29 12:46:52,264 - core.base_test - INFO - 请求体: {"phone": "18821371697", "password": "Ww12345678.."}
+2025-12-29 12:46:52,529 - core.base_test - INFO - 响应状态: 200
+2025-12-29 12:46:52,529 - core.base_test - INFO - 响应体: {"code": 200, "data": {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzYxMiwiZXhwIjoxNzY3MDcwMDEyfQ.yimGai7GNPw4iJ0_ZLXuXGykBP5pWDDrttLKeQjtVYM", "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1LCJjb21wYW55X2lkIjoxLCJjb21wYW55X3JvbGVfaWQiOjEsImlhdCI6MTc2Njk4MzYxMiwiZXhwIjoxNzY3NTg4NDEyfQ.qhZAi1JRpQ4KZAUUrQf2GkjSIlbPq35TZr-z-wCrij0", "expires_in": 3600, "id": 355, "name": "赵文龙", "type": 1, "company_role_id": 1, "company_role_name": "超级管理员", "company_id": 1, "company_name": "默认公司"}, "message": "登录成功", "timestamp": 1766983613}
+2025-12-29 12:46:52,531 - core.base_test - INFO - 请求: POST /products
+2025-12-29 12:46:52,531 - core.base_test - INFO - 请求体: {"name": "质量开发.", "description": "单位责任重要东西不是主题成为.\n安全大学虽然因此增加音乐游戏需要.个人当前社会介绍推荐.只是汽车能够特别所以设备.\n都是用户自己部门的话位置的话.如何主题同时以上合作.\n发展销售还有只有以上.数据一切无法.作为过程密码简介可以中心.投资一定解决作者数据企业要求.\n那个首页之后数据详细而且.专业提高基本标题包括网络支持.项目管理女人位置不能北京经验.能够法律在线网站不是提供.", "price": 992.04, "stock": 46, "category": "一切", "sku": "SKU-DE5BAFB4", "active": false}
+2025-12-29 12:46:52,545 - core.base_test - INFO - 响应状态: 404
+2025-12-29 12:46:52,545 - core.base_test - INFO - 响应体: Not Found
+2025-12-29 12:46:52,558 - core.base_test - INFO - 结束测试: TestProductAPI
