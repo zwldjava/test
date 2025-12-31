@@ -1,6 +1,0 @@
-2025-12-29 12:43:48,664 - core.base_test - INFO - 开始测试: TestXSS
-2025-12-29 12:43:48,665 - core.base_test - INFO - 请求: POST /users/register
-2025-12-29 12:43:48,665 - core.base_test - INFO - 请求体: {"username": "testuser_-2995344813898017710", "email": "test_-2995344813898017710@example.com", "password": "password123", "name": "<script>alert('XSS')</script>"}
-2025-12-29 12:43:48,918 - core.base_test - INFO - 响应状态: 401
-2025-12-29 12:43:48,918 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983429}
-2025-12-29 12:43:48,936 - core.base_test - INFO - 结束测试: TestXSS

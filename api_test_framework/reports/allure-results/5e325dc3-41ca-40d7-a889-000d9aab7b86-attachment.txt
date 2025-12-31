@@ -1,6 +1,0 @@
-2025-12-29 12:43:47,875 - core.base_test - INFO - 开始测试: TestProductSearch
-2025-12-29 12:43:47,876 - core.base_test - INFO - 请求: POST /users/register
-2025-12-29 12:43:47,876 - core.base_test - INFO - 请求体: {"username": "duxia", "email": "yiping@example.net", "phone": "18874572264", "name": "黄建华", "age": 28, "address": "海南省平县萧山荆门街b座 313625", "avatar": "https://picsum.photos/242/887"}
-2025-12-29 12:43:48,100 - core.base_test - INFO - 响应状态: 401
-2025-12-29 12:43:48,100 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983428}
-2025-12-29 12:43:48,121 - core.base_test - INFO - 结束测试: TestProductSearch

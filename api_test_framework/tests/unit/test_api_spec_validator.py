@@ -15,7 +15,11 @@ class TestAPISpecValidator:
     def mock_response(self):
         response = Mock()
         response.status_code = 200
-        response.headers = {"content-type": "application/json"}
+        response.headers = {
+            "content-type": "application/json; charset=utf-8",
+            "X-Frame-Options": "DENY",
+            "X-Content-Type-Options": "nosniff"
+        }
         response.json.return_value = {
             "id": "123",
             "name": "Test Product",

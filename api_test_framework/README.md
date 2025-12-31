@@ -13,6 +13,7 @@
 - **通知机制**: 支持邮件和 Slack 通知
 - **持续集成**: 集成 GitHub Actions，支持多版本 Python 测试
 - **数据生成**: 使用 Faker 生成测试数据
+- **数据管理**: 支持从 YAML/JSON 文件读取测试数据，实现数据与代码分离
 
 ## 项目结构
 
@@ -28,13 +29,24 @@ api_test_framework/
 │   ├── validator.py       # 响应验证器
 │   ├── security_checker.py # 安全检查器
 │   ├── api_spec_validator.py # API规范验证
-│   └── base_test.py       # 测试基类
+│   ├── base_test.py       # 测试基类
+│   └── api/               # API层（新增）
+│       ├── __init__.py
+│       ├── base_api.py    # 基础API类
+│       ├── api_context.py # API上下文管理
+│       ├── api_manager.py # API管理器
+│       ├── auth_api.py    # 认证API
+│       └── user_api.py    # 用户API
 ├── utils/                  # 工具模块
 │   ├── logger.py          # 日志工具
 │   ├── data_generator.py  # 数据生成器
+│   ├── data_reader.py     # 数据读取器
 │   ├── report_generator.py # 报告生成器
 │   └── notification.py    # 通知工具
 ├── tests/                  # 测试用例
+│   ├── data/              # 测试数据
+│   │   ├── login_test_cases.yaml
+│   │   └── user_test_cases.json
 │   ├── api/               # API测试
 │   └── unit/              # 单元测试
 ├── .github/                # GitHub Actions配置
@@ -49,6 +61,451 @@ api_test_framework/
 ├── pyproject.toml         # 项目元数据
 └── README.md              # 项目文档
 ```
+
+## API层架构
+
+框架新增了完整的API层，解决了接口硬编码、接口关联数据管理等问题。
+
+### 核心组件
+
+#### 1. BaseAPI - 基础API类
+
+提供通用的HTTP请求和验证功能，所有业务API类都继承自此类。
+
+**主要功能：**
+- 统一的HTTP请求方法
+- 自动处理认证token
+- 响应验证方法
+- 数据提取和上下文存储
+
+**示例：**
+```python
+from core.api.base_api import BaseAPI
+
+class MyAPI(BaseAPI):
+    def get_data(self, id: int):
+        response = self._request("GET", f"/data/{id}")
+        self._validate_status_code(response, 200)
+        return self._extract_data(response)
+```
+
+#### 2. APIContext - API上下文
+
+管理测试过程中的共享数据（如token、用户ID等），支持接口关联。
+
+**主要功能：**
+- 单例模式，全局共享
+- 存储和获取上下文数据
+- 支持嵌套字段访问
+
+**示例：**
+```python
+from core.api.api_context import APIContext
+
+context = APIContext()
+context.set("token", "abc123")
+context.set("user_id", 1001)
+
+token = context.get("token")
+user_id = context.get("user_id")
+```
+
+#### 3. APIManager - API管理器
+
+统一管理所有API实例和上下文，简化测试代码。
+
+**主要功能：**
+- 注册和获取API实例
+- 管理共享上下文
+- 统一配置管理
+
+**示例：**
+```python
+from core.api.api_manager import APIManager
+from core.api.auth_api import AuthAPI
+from core.api.user_api import UserAPI
+
+manager = APIManager()
+auth_api = manager.register_api("auth", AuthAPI)
+user_api = manager.register_api("user", UserAPI)
+
+# 所有API实例共享同一个上下文
+token = auth_api.login_and_extract_token("phone", "password")
+profile = user_api.get_profile()  # 自动使用上面获取的token
+```
+
+#### 4. 业务API类
+
+封装具体的业务接口，提供语义化的方法调用。
+
+**AuthAPI - 认证相关接口：**
+```python
+from core.api.auth_api import AuthAPI
+
+auth_api = AuthAPI()
+
+# 登录
+response = auth_api.login("18821371697", "password")
+
+# 登录并自动提取token
+token = auth_api.login_and_extract_token("18821371697", "password")
+
+# 注册
+response = auth_api.register("phone", "password", "password", "123456")
+
+# 发送验证码
+response = auth_api.send_verification_code("phone")
+
+# 重置密码
+response = auth_api.reset_password("phone", "new_password", "123456")
+
+# 刷新token
+response = auth_api.refresh_token()
+
+# 退出登录
+response = auth_api.logout()
+```
+
+**UserAPI - 用户相关接口：**
+```python
+from core.api.user_api import UserAPI
+
+user_api = UserAPI()
+
+# 获取用户信息
+response = user_api.get_profile()
+profile = user_api.get_profile_and_extract()
+
+# 更新用户信息
+response = user_api.update_profile({"nickname": "新昵称"})
+
+# 修改密码
+response = user_api.change_password("old_password", "new_password")
+
+# 获取用户列表
+response = user_api.get_user_list(page=1, page_size=10)
+
+# 删除用户
+response = user_api.delete_user(1001)
+
+# 根据ID获取用户
+response = user_api.get_user_by_id(1001)
+```
+
+### 使用API层编写测试
+
+#### 基础用法
+
+```python
+import pytest
+from core.api.api_manager import APIManager
+from core.api.auth_api import AuthAPI
+
+class TestAuthWithAPILayer:
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        self.manager = APIManager()
+        self.auth_api = self.manager.register_api("auth", AuthAPI)
+    
+    def test_login_success(self):
+        response = self.auth_api.login("18821371697", "Ww12345678..")
+        self.auth_api._validate_status_code(response, 200)
+        self.auth_api._validate_response_code(response, 200)
+        self.auth_api._validate_message_contains(response, "登录成功")
+```
+
+#### 接口关联测试
+
+```python
+import pytest
+from core.api.api_manager import APIManager
+from core.api.auth_api import AuthAPI
+from core.api.user_api import UserAPI
+
+class TestUserWorkflow:
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        self.manager = APIManager()
+        self.auth_api = self.manager.register_api("auth", AuthAPI)
+        self.user_api = self.manager.register_api("user", UserAPI)
+    
+    def test_login_and_get_profile(self):
+        # 步骤1: 登录获取token
+        token = self.auth_api.login_and_extract_token("18821371697", "Ww12345678..")
+        assert token is not None
+        
+        # 步骤2: 使用token获取用户信息（自动从上下文获取）
+        profile = self.user_api.get_profile_and_extract()
+        assert profile is not None
+        
+        # 步骤3: 更新用户信息
+        response = self.user_api.update_profile({"nickname": "测试用户"})
+        self.user_api._validate_status_code(response, 200)
+```
+
+#### 参数化测试
+
+```python
+import pytest
+from core.api.api_manager import APIManager
+from core.api.auth_api import AuthAPI
+
+class TestAuthScenarios:
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        self.manager = APIManager()
+        self.auth_api = self.manager.register_api("auth", AuthAPI)
+    
+    @pytest.mark.parametrize("phone,password,expected_code,expected_message", [
+        ("18821371697", "Ww12345678..", 200, "登录成功"),
+        ("", "", 400, "密码不能为空"),
+        ("18821371697", "", 400, "密码不能为空"),
+        ("18821371697", "wrongpassword", 401, "手机号或密码错误"),
+    ])
+    def test_login_scenarios(self, phone, password, expected_code, expected_message):
+        response = self.auth_api.login(phone, password)
+        self.auth_api._validate_response_code(response, expected_code)
+        self.auth_api._validate_message_contains(response, expected_message)
+```
+
+### 创建自定义业务API类
+
+```python
+from core.api.base_api import BaseAPI
+import requests
+
+class ProductAPI(BaseAPI):
+    def get_product_list(self, category_id: int = None, page: int = 1) -> requests.Response:
+        params = {"page": page}
+        if category_id:
+            params["category_id"] = category_id
+        return self._request("GET", "/products", params=params)
+    
+    def get_product_detail(self, product_id: int) -> requests.Response:
+        return self._request("GET", f"/products/{product_id}")
+    
+    def create_product(self, product_data: dict) -> requests.Response:
+        return self._request("POST", "/products", json=product_data)
+    
+    def update_product(self, product_id: int, product_data: dict) -> requests.Response:
+        return self._request("PUT", f"/products/{product_id}", json=product_data)
+    
+    def delete_product(self, product_id: int) -> requests.Response:
+        return self._request("DELETE", f"/products/{product_id}")
+```
+
+### API层的优势
+
+1. **消除硬编码**：所有API端点封装在业务API类中，不再在测试用例中硬编码
+2. **接口关联**：通过APIContext管理共享数据，轻松实现接口间的数据传递
+3. **代码复用**：通用的请求和验证逻辑封装在BaseAPI中，减少重复代码
+4. **易于维护**：API变更只需修改对应的业务API类，不影响测试用例
+5. **语义清晰**：使用语义化的方法名（如login、get_profile），代码更易读
+6. **扩展性强**：可以轻松添加新的业务API类和验证方法
+
+## Data层 - 测试数据管理
+
+框架提供了完整的Data层，支持从YAML和JSON文件读取测试数据，实现数据与代码分离。
+
+### 核心组件
+
+#### DataReader - 数据读取器
+
+提供统一的数据读取接口，支持YAML和JSON格式。
+
+**主要功能：**
+- 读取YAML和JSON文件
+- 自动识别文件格式
+- 提供测试数据加载方法
+- 支持数据文件列表查询
+
+**示例：**
+```python
+from utils.data_reader import DataReader
+
+reader = DataReader()
+
+# 读取YAML文件
+data = reader.read_yaml("login_test_cases")
+
+# 读取JSON文件
+data = reader.read_json("user_test_cases")
+
+# 自动识别格式
+data = reader.read("login_test_cases")
+
+# 获取测试用例列表
+test_cases = reader.get_test_cases("login_test_cases")
+
+# 获取特定键的数据
+config = reader.get_test_data("config", "api_url")
+```
+
+### 测试数据文件格式
+
+#### YAML格式示例
+
+```yaml
+test_cases:
+  - case_id: TC001
+    case_name: 正常登录
+    phone: "18821371697"
+    password: "Ww12345678.."
+    expected_status: 200
+    expected_code: 200
+    expected_message: "登录成功"
+    description: 使用正确的手机号和密码登录
+
+  - case_id: TC002
+    case_name: 手机号为空
+    phone: ""
+    password: "test123"
+    expected_status: 200
+    expected_code: 400
+    expected_message: "手机号或用户名不能为空"
+    description: 手机号为空时应该返回错误
+```
+
+#### JSON格式示例
+
+```json
+{
+  "test_cases": [
+    {
+      "case_id": "TC001",
+      "case_name": "获取用户信息成功",
+      "user_id": 1,
+      "expected_status": 200,
+      "expected_code": 200,
+      "description": "使用有效的用户ID获取用户信息"
+    },
+    {
+      "case_id": "TC002",
+      "case_name": "用户不存在",
+      "user_id": 99999,
+      "expected_status": 200,
+      "expected_code": 404,
+      "expected_message": "用户不存在",
+      "description": "使用不存在的用户ID应该返回404错误"
+    }
+  ]
+}
+```
+
+### 使用Data层编写测试
+
+#### 基础用法
+
+```python
+import pytest
+from utils.data_reader import DataReader
+
+class TestLoginWithData:
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        self.reader = DataReader()
+    
+    def test_login_success(self):
+        # 读取单个测试数据
+        data = self.reader.get_test_data("login_test_cases", "test_cases")[0]
+        
+        response = self.auth_api.login(data["phone"], data["password"])
+        self.auth_api._validate_status_code(response, data["expected_status"])
+        self.auth_api._validate_response_code(response, data["expected_code"])
+```
+
+#### 使用Fixture
+
+```python
+import pytest
+from utils.data_reader import DataReader
+
+class TestLoginWithFixture:
+    def test_login_success(self, test_cases):
+        # 使用fixture加载测试用例
+        cases = test_cases("login_test_cases")
+        
+        for case in cases:
+            response = self.auth_api.login(case["phone"], case["password"])
+            self.auth_api._validate_status_code(response, case["expected_status"])
+            self.auth_api._validate_response_code(response, case["expected_code"])
+```
+
+#### 参数化测试
+
+```python
+import pytest
+from utils.data_reader import DataReader
+
+def load_login_test_cases():
+    reader = DataReader()
+    return reader.get_test_cases("login_test_cases")
+
+class TestLoginDataDriven:
+    @pytest.mark.parametrize("test_case", load_login_test_cases())
+    def test_login_scenarios(self, test_case):
+        response = self.auth_api.login(test_case["phone"], test_case["password"])
+        self.auth_api._validate_status_code(response, test_case["expected_status"])
+        self.auth_api._validate_response_code(response, test_case["expected_code"])
+        self.auth_api._validate_message_contains(response, test_case["expected_message"])
+```
+
+#### 结合API层使用
+
+```python
+import pytest
+from core.api.api_manager import APIManager
+from core.api.auth_api import AuthAPI
+from utils.data_reader import DataReader
+
+class TestAuthWithDataLayer:
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        self.manager = APIManager()
+        self.auth_api = self.manager.register_api("auth", AuthAPI)
+        self.reader = DataReader()
+    
+    def test_login_with_data(self):
+        # 从数据文件读取测试用例
+        test_cases = self.reader.get_test_cases("login_test_cases")
+        
+        for case in test_cases:
+            with allure.step(f"测试用例: {case['case_name']}"):
+                response = self.auth_api.login(case["phone"], case["password"])
+                
+                self.auth_api._validate_status_code(response, case["expected_status"])
+                self.auth_api._validate_response_code(response, case["expected_code"])
+                
+                if "expected_message" in case:
+                    self.auth_api._validate_message_contains(response, case["expected_message"])
+```
+
+### Data层的优势
+
+1. **数据与代码分离**：测试数据存储在独立的YAML/JSON文件中，便于维护
+2. **易于修改**：修改测试数据无需改动测试代码
+3. **支持大量用例**：可以轻松管理成百上千个测试用例
+4. **格式灵活**：支持YAML和JSON两种格式，满足不同需求
+5. **非技术人员友好**：YAML格式简单易读，非技术人员也能维护数据
+6. **参数化测试**：与pytest的参数化功能完美结合
+
+### 数据文件组织建议
+
+```
+tests/data/
+├── auth/                    # 认证相关数据
+│   ├── login_test_cases.yaml
+│   ├── register_test_cases.yaml
+│   └── reset_password_test_cases.yaml
+├── user/                    # 用户相关数据
+│   ├── profile_test_cases.yaml
+│   └── user_list_test_cases.json
+├── product/                 # 产品相关数据
+│   └── product_test_cases.yaml
+└── common/                  # 通用数据
+    └── config.yaml
+```
+
 
 ## 安装
 
@@ -209,8 +666,14 @@ pytest -n auto
 
 生成 Allure 报告：
 ```bash
-pytest --alluredir=allure-results
-allure serve allure-results
+pytest
+python generate_allure_report.py
+```
+
+或者使用 Allure 命令行工具：
+```bash
+pytest
+allure serve reports/allure-results
 ```
 
 ### 安全检查

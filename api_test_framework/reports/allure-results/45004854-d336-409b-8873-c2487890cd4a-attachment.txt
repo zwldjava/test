@@ -1,6 +1,0 @@
-[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestProductAPI
-[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /api/users/register
-[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"username": "yangao", "email": "qiaojun@example.net", "phone": "15917267085", "name": "胡洋", "age": 51, "address": "新疆维吾尔自治区冬梅县魏都夏路f座 604566", "avatar": "https://picsum.photos/458/440"}
-[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 401
-[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766825296}
-[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestProductAPI

@@ -1,8 +1,0 @@
-tests\api\test_wo_api.py:174: in test_wo_api
-    self._run_validations(response, test_case["request"], test_case["validations"])
-tests\api\test_wo_api.py:126: in _run_validations
-    self._validate_has_field(response, validation["field"])
-tests\api\test_wo_api.py:63: in _validate_has_field
-    assert False, f"字段路径无效: {field}"
-E   AssertionError: 字段路径无效: data.wo_id
-E   assert False

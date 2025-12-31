@@ -1,3 +1,0 @@
-E   AssertionError: 应该返回200状态码
-    assert 401 == 200
-     +  where 401 = <Response [401]>.status_code

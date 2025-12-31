@@ -1,6 +1,0 @@
-INFO     core.base_test:base_test.py:19 开始测试: TestUserLogin
-INFO     core.base_test:base_test.py:25 请求: POST /users/login
-INFO     core.base_test:base_test.py:29 请求体: {"username": "nonexistentuser", "password": "password123"}
-INFO     core.base_test:base_test.py:32 响应状态: 401
-INFO     core.base_test:base_test.py:34 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983537}
-INFO     core.base_test:base_test.py:22 结束测试: TestUserLogin

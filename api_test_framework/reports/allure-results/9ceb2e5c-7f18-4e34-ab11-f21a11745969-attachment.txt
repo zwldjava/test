@@ -1,6 +1,0 @@
-[32mINFO    [0m core.base_test:base_test.py:19 开始测试: TestUserLogin
-[32mINFO    [0m core.base_test:base_test.py:25 请求: POST /users/register
-[32mINFO    [0m core.base_test:base_test.py:29 请求体: {"username": "minxiao", "email": "chaoliu@example.net", "phone": "15981803767", "name": "魏玉梅", "age": 57, "address": "黑龙江省杭州市翔安郭街V座 868758", "avatar": "https://picsum.photos/411/242"}
-[32mINFO    [0m core.base_test:base_test.py:32 响应状态: 401
-[32mINFO    [0m core.base_test:base_test.py:34 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766983432}
-[32mINFO    [0m core.base_test:base_test.py:22 结束测试: TestUserLogin

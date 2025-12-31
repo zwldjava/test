@@ -1,7 +1,0 @@
-tests\api\test_user_api.py:132: in test_nonexistent_user
-    self.assert_field_exists(response, "error")
-core\base_test.py:84: in assert_field_exists
-    self.validator.validate_field_exists(response, field_path)
-core\validator.py:57: in validate_field_exists
-    assert value is not None, f"字段不存在: {field_path}"
-E   AssertionError: 字段不存在: error

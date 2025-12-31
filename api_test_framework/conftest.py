@@ -1,7 +1,13 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+
 import allure
 import pytest
 import requests_mock
 from utils.logger import get_logger
+from utils.data_reader import DataReader
 
 from config.settings import config
 from core.http_client import HTTPClient
@@ -57,6 +63,26 @@ def authenticated_client(api_client, auth_token):
     api_client.headers["Authorization"] = f"Bearer {auth_token}"
     yield api_client
     api_client.headers.pop("Authorization", None)
+
+
+@pytest.fixture(scope="session")
+def data_reader():
+    reader = DataReader()
+    yield reader
+
+
+@pytest.fixture(scope="function")
+def test_data(data_reader):
+    def _load_data(file_name: str, key: str = None):
+        return data_reader.get_test_data(file_name, key)
+    return _load_data
+
+
+@pytest.fixture(scope="function")
+def test_cases(data_reader):
+    def _load_test_cases(file_name: str):
+        return data_reader.get_test_cases(file_name)
+    return _load_test_cases
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)

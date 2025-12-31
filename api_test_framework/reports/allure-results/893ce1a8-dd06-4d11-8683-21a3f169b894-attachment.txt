@@ -1,6 +1,0 @@
-2025-12-29 16:15:09,698 - core.base_test - INFO - 开始测试: TestUserRegistration
-2025-12-29 16:15:09,699 - core.base_test - INFO - 请求: POST /users/register
-2025-12-29 16:15:09,699 - core.base_test - INFO - 请求体: {"username": "jing62", "email": "lixiao@example.org", "phone": "13522242619", "name": "朱淑兰", "age": 58, "address": "北京市呼和浩特县普陀凌路x座 118731", "avatar": "https://picsum.photos/605/949"}
-2025-12-29 16:15:09,965 - core.base_test - INFO - 响应状态: 401
-2025-12-29 16:15:09,965 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766996110}
-2025-12-29 16:15:09,981 - core.base_test - INFO - 结束测试: TestUserRegistration

@@ -1,0 +1,30 @@
+{
+  "test_cases": [
+    {
+      "case_id": "TC001",
+      "case_name": "获取用户信息成功",
+      "user_id": 1,
+      "expected_status": 200,
+      "expected_code": 200,
+      "description": "使用有效的用户ID获取用户信息"
+    },
+    {
+      "case_id": "TC002",
+      "case_name": "用户不存在",
+      "user_id": 99999,
+      "expected_status": 200,
+      "expected_code": 404,
+      "expected_message": "用户不存在",
+      "description": "使用不存在的用户ID应该返回404错误"
+    },
+    {
+      "case_id": "TC003",
+      "case_name": "用户ID为空",
+      "user_id": null,
+      "expected_status": 200,
+      "expected_code": 400,
+      "expected_message": "用户ID不能为空",
+      "description": "用户ID为空时应该返回错误"
+    }
+  ]
+}

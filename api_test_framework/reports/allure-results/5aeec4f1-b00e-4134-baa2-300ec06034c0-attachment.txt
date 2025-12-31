@@ -1,0 +1,5 @@
+tests\api\test_login_with_data_layer.py:32: in test_login_with_data
+    self.auth_api._validate_response_code(response, case["expected_code"])
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为401

@@ -1,6 +1,0 @@
-2025-12-29 15:53:47,262 - core.base_test - INFO - 开始测试: TestUserRegistration
-2025-12-29 15:53:47,263 - core.base_test - INFO - 请求: POST /users/register
-2025-12-29 15:53:47,263 - core.base_test - INFO - 请求体: {"username": "leifang", "phone": "13441804586", "name": "戴琳", "age": 42, "address": "天津市永安县徐汇六安路W座 208785", "avatar": "https://dummyimage.com/257x86"}
-2025-12-29 15:53:47,546 - core.base_test - INFO - 响应状态: 401
-2025-12-29 15:53:47,546 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766994828}
-2025-12-29 15:53:47,550 - core.base_test - INFO - 结束测试: TestUserRegistration

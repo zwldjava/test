@@ -1,5 +1,0 @@
-2025-12-27 16:48:16,827 - core.base_test - INFO - 开始测试: TestSQLInjection
-2025-12-27 16:48:16,828 - core.base_test - INFO - 请求: GET /api/products?name=1' OR '1'='1
-2025-12-27 16:48:17,193 - core.base_test - INFO - 响应状态: 401
-2025-12-27 16:48:17,194 - core.base_test - INFO - 响应体: {"code": 401, "data": null, "message": "缺少认证信息", "timestamp": 1766825298}
-2025-12-27 16:48:17,207 - core.base_test - INFO - 结束测试: TestSQLInjection

@@ -1,8 +1,0 @@
-tests\api\test_wo_api.py:174: in test_wo_api
-    self._run_validations(response, test_case["request"], test_case["validations"])
-tests\api\test_wo_api.py:124: in _run_validations
-    self._validate_message_contains(response, validation["expected"])
-tests\api\test_wo_api.py:51: in _validate_message_contains
-    assert expected in response_data["message"], f"响应消息应该包含'{expected}'，实际为'{response_data['message']}'"
-E   AssertionError: 响应消息应该包含'扩展数据不能为空'，实际为'表单数据不能为空'
-E   assert '扩展数据不能为空' in '表单数据不能为空'

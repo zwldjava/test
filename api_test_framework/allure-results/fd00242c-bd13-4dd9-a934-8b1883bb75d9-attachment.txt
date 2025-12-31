@@ -1,9 +1,0 @@
-tests\api\test_wo_api.py:183: in test_wo_api
-    self._run_validations(response, test_case["request"], test_case["validations"])
-tests\api\test_wo_api.py:129: in _run_validations
-    self._validate_status_code(response, validation["expected"])
-tests\api\test_wo_api.py:52: in _validate_status_code
-    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
-E   AssertionError: 状态码应该为200，实际为401
-E   assert 401 == 200
-E    +  where 401 = <Response [401]>.status_code
