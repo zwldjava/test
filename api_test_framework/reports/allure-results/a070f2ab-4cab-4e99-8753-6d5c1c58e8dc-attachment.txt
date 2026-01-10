@@ -1,0 +1,1 @@
+{"code":500,"data":null,"message":"获取独立打款列表失败: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 9","timestamp":1767841049}

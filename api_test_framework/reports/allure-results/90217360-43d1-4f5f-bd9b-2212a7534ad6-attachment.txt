@@ -1,0 +1,6 @@
+✗ api/test_create_transfer::test_create_transfer_invalid_params[-100-1200-123-1-taobao-1234123421-341234123-1234-1234123-51]
+失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500

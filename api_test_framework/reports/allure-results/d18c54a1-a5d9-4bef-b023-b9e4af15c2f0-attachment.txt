@@ -1,0 +1,1 @@
+✓ unit/test_api_spec_validator::test_validate_endpoint_success

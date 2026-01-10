@@ -1,0 +1,1 @@
+✓ unit/test_security_checker::test_check_sql_injection

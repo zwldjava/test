@@ -1,0 +1,5 @@
+tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为500，实际为400

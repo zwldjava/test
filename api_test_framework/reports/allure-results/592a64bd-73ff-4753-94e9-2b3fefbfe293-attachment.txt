@@ -1,0 +1,6 @@
+✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[0-test_account_001-400]
+失败原因: tests\api\test_standalone_transfer.py:99: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404

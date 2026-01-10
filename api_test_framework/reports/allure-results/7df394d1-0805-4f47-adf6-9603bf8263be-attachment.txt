@@ -1,0 +1,6 @@
+✗ api/test_create_transfer::test_create_transfer_without_auth
+失败原因: tests\api\test_create_transfer.py:50: in test_create_transfer_without_auth
+    self.transfer_api._validate_status_code(response, 401)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为401，实际为200

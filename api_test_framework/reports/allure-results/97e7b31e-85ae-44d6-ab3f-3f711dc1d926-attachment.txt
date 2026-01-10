@@ -1,0 +1,1 @@
+✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case0]

@@ -1,1427 +1,259 @@
-2025-12-30 18:47:52,673 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:47:52,674 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-30 18:47:52,674 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x000002327C5C5160>
-2025-12-30 18:47:52,674 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:47:53,080 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,080 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 18:47:53,081 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,378 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 18:47:53,385 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,385 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f] - 状态: passed
-2025-12-30 18:47:53,385 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,388 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,389 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:53,389 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,662 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:53,666 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,667 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:47:53,667 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,670 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,670 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:53,670 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,926 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:53,931 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,931 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:47:53,931 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:53,934 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:53,935 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:53,935 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,214 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:47:54,218 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,218 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:47:54,219 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,221 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,222 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 18:47:54,222 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,498 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 18:47:54,502 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,503 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef] - 状态: passed
-2025-12-30 18:47:54,503 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,505 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,505 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 18:47:54,505 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,783 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 18:47:54,786 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,786 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction - 状态: passed
-2025-12-30 18:47:54,787 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:54,789 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:54,789 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 18:47:54,789 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,063 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 18:47:55,065 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,065 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing - 状态: passed
-2025-12-30 18:47:55,066 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,068 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,068 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 18:47:55,068 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,368 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 18:47:55,370 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,370 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests - 状态: passed
-2025-12-30 18:47:55,371 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,374 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,374 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 18:47:55,374 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,640 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 18:47:55,642 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,642 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint - 状态: passed
-2025-12-30 18:47:55,642 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,645 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,645 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 18:47:55,646 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,949 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 18:47:55,951 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,951 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time - 状态: passed
-2025-12-30 18:47:55,951 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:55,955 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:55,955 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 18:47:55,955 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,713 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 18:47:56,715 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,715 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests - 状态: passed
-2025-12-30 18:47:56,715 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,718 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,718 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 18:47:56,719 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,719 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 18:47:56,721 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,722 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid - 状态: passed
-2025-12-30 18:47:56,722 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,724 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,724 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 18:47:56,724 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,725 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 18:47:56,727 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,727 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid - 状态: passed
-2025-12-30 18:47:56,727 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,729 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,729 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 18:47:56,729 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,730 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 18:47:56,732 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,732 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid - 状态: passed
-2025-12-30 18:47:56,732 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,734 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,735 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 18:47:56,735 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,736 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 18:47:56,738 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,738 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid - 状态: passed
-2025-12-30 18:47:56,738 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,740 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,740 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 18:47:56,741 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,741 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 18:47:56,743 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,743 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid - 状态: passed
-2025-12-30 18:47:56,743 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,745 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,746 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 18:47:56,746 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,746 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 18:47:56,748 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,748 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid - 状态: passed
-2025-12-30 18:47:56,749 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,751 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,751 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 18:47:56,751 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,752 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 18:47:56,754 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,754 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type - 状态: passed
-2025-12-30 18:47:56,754 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,757 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,757 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:47:56,757 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,790 - api_test_framework.conftest - ERROR - 测试失败 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:47:56,791 - api_test_framework.conftest - ERROR - 失败原因: tests\unit\test_api_spec_validator.py:69: in test_validate_endpoint_success
-    assert result["valid"] == True
-E   assert False == True
-2025-12-30 18:47:56,794 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,795 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success - 状态: passed
-2025-12-30 18:47:56,795 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,797 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,797 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 18:47:56,798 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,798 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 18:47:56,801 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,802 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid - 状态: passed
-2025-12-30 18:47:56,802 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,804 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,804 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 18:47:56,805 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,805 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 18:47:56,809 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,809 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields - 状态: passed
-2025-12-30 18:47:56,809 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,812 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,812 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 18:47:56,812 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,813 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 18:47:56,814 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,814 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string - 状态: passed
-2025-12-30 18:47:56,815 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,816 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,817 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 18:47:56,817 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,819 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 18:47:56,820 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,820 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email - 状态: passed
-2025-12-30 18:47:56,820 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,822 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,822 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 18:47:56,822 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,823 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 18:47:56,825 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,825 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone - 状态: passed
-2025-12-30 18:47:56,825 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,827 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,827 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 18:47:56,827 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,828 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 18:47:56,829 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,829 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int - 状态: passed
-2025-12-30 18:47:56,829 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,831 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,831 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 18:47:56,831 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,832 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 18:47:56,833 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,833 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float - 状态: passed
-2025-12-30 18:47:56,834 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,835 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,835 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 18:47:56,836 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,837 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 18:47:56,838 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,839 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data - 状态: passed
-2025-12-30 18:47:56,839 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,840 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,841 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 18:47:56,841 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,842 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 18:47:56,844 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,844 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data - 状态: passed
-2025-12-30 18:47:56,844 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,846 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,846 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 18:47:56,846 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,848 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 18:47:56,849 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,849 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data - 状态: passed
-2025-12-30 18:47:56,849 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,852 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,852 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 18:47:56,852 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,853 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 18:47:56,854 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,855 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection - 状态: passed
-2025-12-30 18:47:56,855 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,857 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,857 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 18:47:56,857 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,858 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 18:47:56,859 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,860 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss - 状态: passed
-2025-12-30 18:47:56,860 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,861 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,862 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 18:47:56,862 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,863 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 18:47:56,864 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,865 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal - 状态: passed
-2025-12-30 18:47:56,865 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,866 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,867 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 18:47:56,867 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,868 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 18:47:56,869 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,870 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection - 状态: passed
-2025-12-30 18:47:56,870 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,872 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,872 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 18:47:56,872 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,873 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 18:47:56,874 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,874 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data - 状态: passed
-2025-12-30 18:47:56,875 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,876 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,877 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 18:47:56,877 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,878 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 18:47:56,880 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,880 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all - 状态: passed
-2025-12-30 18:47:56,880 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,882 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,882 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 18:47:56,882 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:56,883 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 18:47:56,886 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:47:56,886 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data - 状态: passed
-2025-12-30 18:47:56,886 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:47:57,178 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:47:57,179 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-30 18:47:57,179 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-30 18:47:57,179 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:48:27,599 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:48:27,599 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-30 18:48:27,600 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x000002264C4C9160>
-2025-12-30 18:48:27,600 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:48:27,879 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:27,879 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 18:48:27,880 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,167 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 18:48:28,173 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,174 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f] - 状态: passed
-2025-12-30 18:48:28,174 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,177 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,177 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:28,177 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,448 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:28,452 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,453 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:48:28,453 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,456 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,456 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:28,456 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,725 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:28,730 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,730 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:48:28,730 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:28,733 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:28,733 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:28,733 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,022 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 18:48:29,026 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,026 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 18:48:29,026 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,029 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,029 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 18:48:29,029 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,297 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 18:48:29,302 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,302 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef] - 状态: passed
-2025-12-30 18:48:29,302 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,305 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,305 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 18:48:29,305 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,576 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 18:48:29,578 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,579 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction - 状态: passed
-2025-12-30 18:48:29,579 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,581 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,581 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 18:48:29,581 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,874 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 18:48:29,877 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,877 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing - 状态: passed
-2025-12-30 18:48:29,878 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:29,880 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:29,880 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 18:48:29,880 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,191 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 18:48:30,194 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,194 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests - 状态: passed
-2025-12-30 18:48:30,195 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,198 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,198 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 18:48:30,199 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,495 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 18:48:30,497 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,497 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint - 状态: passed
-2025-12-30 18:48:30,497 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,500 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,500 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 18:48:30,500 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,816 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 18:48:30,818 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,818 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time - 状态: passed
-2025-12-30 18:48:30,818 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:30,821 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:30,821 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 18:48:30,821 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,559 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 18:48:31,562 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,562 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests - 状态: passed
-2025-12-30 18:48:31,562 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,566 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,566 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 18:48:31,566 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,567 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 18:48:31,569 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,569 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid - 状态: passed
-2025-12-30 18:48:31,570 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,572 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,572 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 18:48:31,572 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,572 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 18:48:31,574 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,575 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid - 状态: passed
-2025-12-30 18:48:31,575 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,577 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,577 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 18:48:31,577 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,578 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 18:48:31,580 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,580 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid - 状态: passed
-2025-12-30 18:48:31,580 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,582 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,582 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 18:48:31,582 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,583 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 18:48:31,584 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,584 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid - 状态: passed
-2025-12-30 18:48:31,585 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,586 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,587 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 18:48:31,587 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,587 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 18:48:31,589 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,589 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid - 状态: passed
-2025-12-30 18:48:31,589 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,591 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,591 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 18:48:31,591 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,592 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 18:48:31,594 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,594 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid - 状态: passed
-2025-12-30 18:48:31,595 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,596 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,596 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 18:48:31,597 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,597 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 18:48:31,599 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,599 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type - 状态: passed
-2025-12-30 18:48:31,600 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,602 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,602 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:48:31,602 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,634 - api_test_framework.conftest - ERROR - 测试失败 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:48:31,635 - api_test_framework.conftest - ERROR - 失败原因: tests\unit\test_api_spec_validator.py:73: in test_validate_endpoint_success
-    assert result["valid"] == True
-E   assert False == True
-2025-12-30 18:48:31,639 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,639 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success - 状态: passed
-2025-12-30 18:48:31,639 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,641 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,642 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 18:48:31,642 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,643 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 18:48:31,645 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,645 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid - 状态: passed
-2025-12-30 18:48:31,646 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,649 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,649 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 18:48:31,649 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,650 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 18:48:31,652 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,652 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields - 状态: passed
-2025-12-30 18:48:31,652 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,655 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,655 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 18:48:31,655 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,656 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 18:48:31,657 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,658 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string - 状态: passed
-2025-12-30 18:48:31,658 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,659 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,660 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 18:48:31,660 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,662 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 18:48:31,663 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,663 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email - 状态: passed
-2025-12-30 18:48:31,663 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,665 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,665 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 18:48:31,666 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,667 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 18:48:31,668 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,668 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone - 状态: passed
-2025-12-30 18:48:31,668 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,670 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,671 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 18:48:31,671 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,671 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 18:48:31,673 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,673 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int - 状态: passed
-2025-12-30 18:48:31,673 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,675 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,675 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 18:48:31,675 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,676 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 18:48:31,677 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,677 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float - 状态: passed
-2025-12-30 18:48:31,677 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,679 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,679 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 18:48:31,679 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,681 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 18:48:31,682 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,682 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data - 状态: passed
-2025-12-30 18:48:31,682 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,684 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,684 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 18:48:31,684 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,686 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 18:48:31,688 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,688 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data - 状态: passed
-2025-12-30 18:48:31,688 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,690 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,690 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 18:48:31,690 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,691 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 18:48:31,693 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,693 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data - 状态: passed
-2025-12-30 18:48:31,693 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,695 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,695 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 18:48:31,696 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,696 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 18:48:31,698 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,698 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection - 状态: passed
-2025-12-30 18:48:31,698 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,700 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,701 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 18:48:31,701 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,701 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 18:48:31,704 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,704 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss - 状态: passed
-2025-12-30 18:48:31,704 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,706 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,706 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 18:48:31,706 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,707 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 18:48:31,709 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,709 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal - 状态: passed
-2025-12-30 18:48:31,709 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,711 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,711 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 18:48:31,711 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,712 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 18:48:31,713 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,714 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection - 状态: passed
-2025-12-30 18:48:31,714 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,716 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,716 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 18:48:31,716 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,716 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 18:48:31,718 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,718 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data - 状态: passed
-2025-12-30 18:48:31,719 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,721 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,721 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 18:48:31,721 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,722 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 18:48:31,724 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,724 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all - 状态: passed
-2025-12-30 18:48:31,724 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,726 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,726 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 18:48:31,726 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,727 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 18:48:31,730 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:31,730 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data - 状态: passed
-2025-12-30 18:48:31,731 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:31,993 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:48:31,993 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-30 18:48:31,993 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-30 18:48:31,993 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:48:54,979 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:48:54,980 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-30 18:48:54,980 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x0000012473425160>
-2025-12-30 18:48:54,981 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:48:55,100 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:55,100 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:48:55,100 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:55,119 - api_test_framework.conftest - ERROR - 测试失败 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:48:55,119 - api_test_framework.conftest - ERROR - 失败原因: tests\unit\test_api_spec_validator.py:73: in test_validate_endpoint_success
-    assert result["valid"] == True
-E   assert False == True
-2025-12-30 18:48:55,125 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:48:55,125 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success - 状态: passed
-2025-12-30 18:48:55,125 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:48:55,432 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:48:55,433 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-30 18:48:55,433 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-30 18:48:55,433 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:49:16,959 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:49:16,960 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-30 18:49:16,960 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x00000235D8B59160>
-2025-12-30 18:49:16,960 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 18:49:17,112 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:49:17,112 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:49:17,112 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:49:17,134 - api_test_framework.conftest - ERROR - 测试失败 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 18:49:17,134 - api_test_framework.conftest - ERROR - 失败原因: tests\unit\test_api_spec_validator.py:75: in test_validate_endpoint_success
-    assert result["valid"] == True
-E   assert False == True
-2025-12-30 18:49:17,141 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 18:49:17,141 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success - 状态: passed
-2025-12-30 18:49:17,141 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 18:49:17,433 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 18:49:17,433 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-30 18:49:17,433 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-30 18:49:17,434 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 20:47:32,929 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 20:47:32,930 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-30 20:47:32,931 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x00000203C5F89160>
-2025-12-30 20:47:32,931 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-30 20:47:33,230 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:33,231 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 20:47:33,231 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:33,518 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f]
-2025-12-30 20:47:33,524 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:33,524 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-Ww12345678..-200-200-\u767b\u5f55\u6210\u529f] - 状态: passed
-2025-12-30 20:47:33,524 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:33,527 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:33,528 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:33,528 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:33,817 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:33,822 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:33,822 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 20:47:33,822 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:33,825 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:33,825 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:33,825 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,096 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:34,103 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,104 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697--200-400-\u5bc6\u7801\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 20:47:34,104 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,107 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,108 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:34,108 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,395 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a]
-2025-12-30 20:47:34,399 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,400 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[-test123-200-400-\u624b\u673a\u53f7\u6216\u7528\u6237\u540d\u4e0d\u80fd\u4e3a\u7a7a] - 状态: passed
-2025-12-30 20:47:34,400 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,403 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,403 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 20:47:34,403 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,667 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef]
-2025-12-30 20:47:34,672 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,672 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_scenarios[18821371697-wrongpassword-200-401-\u624b\u673a\u53f7\u6216\u5bc6\u7801\u9519\u8bef] - 状态: passed
-2025-12-30 20:47:34,672 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,674 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,674 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 20:47:34,674 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,957 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction
-2025-12-30 20:47:34,959 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,960 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_login_with_token_extraction - 状态: passed
-2025-12-30 20:47:34,960 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:34,962 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:34,962 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 20:47:34,962 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,234 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing
-2025-12-30 20:47:35,236 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,236 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_api_context_sharing - 状态: passed
-2025-12-30 20:47:35,236 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,238 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,239 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 20:47:35,239 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,528 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests
-2025-12-30 20:47:35,530 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,531 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_api_layer.py::TestLoginAPIWithAPILayer::test_multiple_login_requests - 状态: passed
-2025-12-30 20:47:35,531 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,534 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,534 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 20:47:35,534 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,800 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint
-2025-12-30 20:47:35,802 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,802 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_endpoint - 状态: passed
-2025-12-30 20:47:35,802 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:35,805 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:35,805 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 20:47:35,805 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,109 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time
-2025-12-30 20:47:36,111 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,112 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_response_time - 状态: passed
-2025-12-30 20:47:36,112 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,114 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,115 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 20:47:36,115 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,855 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests
-2025-12-30 20:47:36,860 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,860 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_ping.py::TestPingAPI::test_ping_concurrent_requests - 状态: passed
-2025-12-30 20:47:36,861 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,863 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,864 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 20:47:36,864 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,865 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid
-2025-12-30 20:47:36,866 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,867 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_valid - 状态: passed
-2025-12-30 20:47:36,867 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,869 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,869 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 20:47:36,869 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,870 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid
-2025-12-30 20:47:36,872 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,872 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_http_method_invalid - 状态: passed
-2025-12-30 20:47:36,873 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,874 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,875 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 20:47:36,875 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,875 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid
-2025-12-30 20:47:36,877 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,877 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_valid - 状态: passed
-2025-12-30 20:47:36,878 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,879 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,879 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 20:47:36,880 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,880 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid
-2025-12-30 20:47:36,882 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,882 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_format_invalid - 状态: passed
-2025-12-30 20:47:36,882 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,884 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,884 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 20:47:36,884 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,885 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid
-2025-12-30 20:47:36,886 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,887 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_valid - 状态: passed
-2025-12-30 20:47:36,887 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,889 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,889 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 20:47:36,889 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,890 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid
-2025-12-30 20:47:36,891 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,892 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_status_code_invalid - 状态: passed
-2025-12-30 20:47:36,892 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,894 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,894 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 20:47:36,894 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,895 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type
-2025-12-30 20:47:36,897 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,897 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_headers_missing_content_type - 状态: passed
-2025-12-30 20:47:36,897 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,899 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,899 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 20:47:36,899 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,900 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success
-2025-12-30 20:47:36,903 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,903 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_endpoint_success - 状态: passed
-2025-12-30 20:47:36,903 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,905 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,905 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 20:47:36,905 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,906 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid
-2025-12-30 20:47:36,908 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,909 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_valid - 状态: passed
-2025-12-30 20:47:36,909 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,911 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,911 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 20:47:36,911 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,912 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields
-2025-12-30 20:47:36,914 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,914 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_api_spec_validator.py::TestAPISpecValidator::test_validate_response_structure_missing_fields - 状态: passed
-2025-12-30 20:47:36,914 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,917 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,917 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 20:47:36,917 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,918 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string
-2025-12-30 20:47:36,920 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,920 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_string - 状态: passed
-2025-12-30 20:47:36,920 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,922 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,922 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 20:47:36,922 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,924 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email
-2025-12-30 20:47:36,926 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,926 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_email - 状态: passed
-2025-12-30 20:47:36,926 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,928 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,929 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 20:47:36,929 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,930 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone
-2025-12-30 20:47:36,931 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,931 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_phone - 状态: passed
-2025-12-30 20:47:36,932 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,933 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,934 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 20:47:36,934 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,934 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int
-2025-12-30 20:47:36,936 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,936 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_int - 状态: passed
-2025-12-30 20:47:36,936 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,939 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,939 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 20:47:36,939 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,940 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float
-2025-12-30 20:47:36,941 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,941 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_random_float - 状态: passed
-2025-12-30 20:47:36,942 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,943 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,944 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 20:47:36,944 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,946 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data
-2025-12-30 20:47:36,947 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,947 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_user_data - 状态: passed
-2025-12-30 20:47:36,947 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,949 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,949 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 20:47:36,949 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,951 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data
-2025-12-30 20:47:36,953 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,953 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_product_data - 状态: passed
-2025-12-30 20:47:36,953 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,955 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,955 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 20:47:36,955 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,956 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data
-2025-12-30 20:47:36,957 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,957 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_data_generator.py::TestDataGenerator::test_generate_order_data - 状态: passed
-2025-12-30 20:47:36,958 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,960 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,960 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 20:47:36,960 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,961 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection
-2025-12-30 20:47:36,963 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,963 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sql_injection - 状态: passed
-2025-12-30 20:47:36,963 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,965 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,965 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 20:47:36,965 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,966 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss
-2025-12-30 20:47:36,968 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,968 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_xss - 状态: passed
-2025-12-30 20:47:36,968 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,970 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,970 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 20:47:36,970 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,971 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal
-2025-12-30 20:47:36,972 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,973 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_path_traversal - 状态: passed
-2025-12-30 20:47:36,973 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,975 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,975 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 20:47:36,975 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,976 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection
-2025-12-30 20:47:36,978 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,978 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_command_injection - 状态: passed
-2025-12-30 20:47:36,978 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,980 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,980 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 20:47:36,981 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,981 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data
-2025-12-30 20:47:36,983 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,983 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_sensitive_data - 状态: passed
-2025-12-30 20:47:36,983 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,985 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,985 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 20:47:36,986 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,987 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all
-2025-12-30 20:47:36,988 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,989 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_check_all - 状态: passed
-2025-12-30 20:47:36,989 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,990 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,991 - api_test_framework.conftest - INFO - 测试开始 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 20:47:36,991 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:36,992 - api_test_framework.conftest - INFO - 测试通过 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data
-2025-12-30 20:47:36,995 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-30 20:47:36,995 - api_test_framework.conftest - INFO - 测试结束 - tests/unit/test_security_checker.py::TestSecurityChecker::test_safe_data - 状态: passed
-2025-12-30 20:47:36,995 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-30 20:47:37,288 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-30 20:47:37,289 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-30 20:47:37,289 - api_test_framework.conftest - INFO - 退出状态码: 0
-2025-12-30 20:47:37,289 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:19:18,190 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:19:18,191 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-31 11:19:18,191 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x000002AD7C879160>
-2025-12-31 11:19:18,191 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:19:18,320 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,320 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:19:18,321 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:18,327 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:19:18,332 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,332 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data - 状态: passed
-2025-12-31 11:19:18,332 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:18,335 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,335 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:19:18,335 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:18,337 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:19:18,339 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,339 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data - 状态: passed
-2025-12-31 11:19:18,339 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:18,342 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,343 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:19:18,343 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:18,721 - api_test_framework.conftest - ERROR - 测试失败 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:19:18,722 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_login_with_data_layer.py:32: in test_login_with_data
-    self.auth_api._validate_response_code(response, case["expected_code"])
+2026-01-05 11:39:15,232 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-05 11:39:15,724 - api_test_framework.conftest - INFO - ✓ api/test_ping::test_ping_endpoint
+2026-01-05 11:39:16,067 - api_test_framework.conftest - INFO - ✓ api/test_ping::test_ping_response_time
+2026-01-05 11:39:16,860 - api_test_framework.conftest - INFO - ✓ api/test_ping::test_ping_concurrent_requests
+2026-01-05 11:39:16,864 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 0
+2026-01-08 10:28:52,137 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 10:28:52,698 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_without_auth
+2026-01-08 10:28:53,232 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_with_valid_token
+2026-01-08 10:28:53,232 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:66: in test_standalone_transfer_with_valid_token
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:53,583 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[0-test_account_001-400]
+2026-01-08 10:28:53,584 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:99: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:53,962 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[-100-test_account_001-400]
+2026-01-08 10:28:53,963 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:99: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:54,382 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[100--400]
+2026-01-08 10:28:54,382 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:99: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:54,808 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[100-None-400]
+2026-01-08 10:28:54,809 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:99: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:55,209 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_missing_params
+2026-01-08 10:28:55,210 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:123: in test_standalone_transfer_missing_params
+    self.transfer_api._validate_status_code(response, 200)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为200，实际为404
+2026-01-08 10:28:55,215 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 10:32:14,345 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 10:32:14,743 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_without_auth
+2026-01-08 10:32:15,181 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_with_valid_token
+2026-01-08 10:32:15,754 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[0-test_account_001-400]
+2026-01-08 10:32:15,754 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:100: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
 core\api\base_api.py:55: in _validate_response_code
     assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
-E   AssertionError: 响应码应该为400，实际为401
-2025-12-31 11:19:18,725 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:19:18,725 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data - 状态: passed
-2025-12-31 11:19:18,726 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:19:19,073 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:19:19,073 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-31 11:19:19,074 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-31 11:19:19,074 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:21:12,727 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:21:12,728 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-31 11:21:12,729 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x00000234BAC89160>
-2025-12-31 11:21:12,729 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:21:12,852 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:12,852 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:21:12,852 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:12,860 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:21:12,864 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:12,865 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data - 状态: passed
-2025-12-31 11:21:12,865 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:12,868 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:12,868 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:21:12,868 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:12,869 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:21:12,872 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:12,872 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data - 状态: passed
-2025-12-31 11:21:12,872 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:12,874 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:12,874 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:21:12,874 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:13,183 - api_test_framework.conftest - ERROR - 测试失败 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:21:13,183 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_login_with_data_layer.py:32: in test_login_with_data
-    self.auth_api._validate_response_code(response, case["expected_code"])
+E   AssertionError: 响应码应该为400，实际为403
+2026-01-08 10:32:16,166 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[-100-test_account_001-400]
+2026-01-08 10:32:16,167 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:100: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
 core\api\base_api.py:55: in _validate_response_code
     assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
-E   AssertionError: 响应码应该为401，实际为400
-2025-12-31 11:21:13,187 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:21:13,187 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data - 状态: passed
-2025-12-31 11:21:13,188 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:21:13,480 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:21:13,481 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-31 11:21:13,481 - api_test_framework.conftest - INFO - 退出状态码: 1
-2025-12-31 11:21:13,481 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:22:41,558 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:22:41,559 - api_test_framework.conftest - INFO - 测试会话开始
-2025-12-31 11:22:41,559 - api_test_framework.conftest - INFO - 测试配置: <_pytest.config.Config object at 0x0000017C4DC09160>
-2025-12-31 11:22:41,559 - api_test_framework.conftest - INFO - ================================================================================
-
-2025-12-31 11:22:41,697 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,698 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:22:41,698 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:41,705 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data
-2025-12-31 11:22:41,710 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,710 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_yaml_data - 状态: passed
-2025-12-31 11:22:41,710 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:41,714 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,714 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:22:41,715 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:41,716 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data
-2025-12-31 11:22:41,718 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,718 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_read_json_data - 状态: passed
-2025-12-31 11:22:41,719 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:41,721 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,721 - api_test_framework.conftest - INFO - 测试开始 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:22:41,721 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:41,728 - api_test_framework.conftest - INFO - 测试通过 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data
-2025-12-31 11:22:41,731 - api_test_framework.conftest - INFO - 
-################################################################################
-2025-12-31 11:22:41,732 - api_test_framework.conftest - INFO - 测试结束 - tests/api/test_login_with_data_layer.py::TestLoginWithDataLayer::test_login_with_data - 状态: passed
-2025-12-31 11:22:41,732 - api_test_framework.conftest - INFO - ################################################################################
-
-2025-12-31 11:22:42,030 - api_test_framework.conftest - INFO - 
-================================================================================
-2025-12-31 11:22:42,030 - api_test_framework.conftest - INFO - 测试会话结束
-2025-12-31 11:22:42,030 - api_test_framework.conftest - INFO - 退出状态码: 0
-2025-12-31 11:22:42,030 - api_test_framework.conftest - INFO - ================================================================================
-
+E   AssertionError: 响应码应该为400，实际为403
+2026-01-08 10:32:16,621 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[100--400]
+2026-01-08 10:32:16,622 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:100: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为403
+2026-01-08 10:32:17,091 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[100-None-400]
+2026-01-08 10:32:17,092 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:100: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为403
+2026-01-08 10:32:17,441 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_missing_params
+2026-01-08 10:32:17,441 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:124: in test_standalone_transfer_missing_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为403
+2026-01-08 10:32:17,446 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 10:37:22,495 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 10:37:22,901 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_without_auth
+2026-01-08 10:37:24,983 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_with_valid_token
+2026-01-08 10:37:26,935 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[0-1200-123-1-taobao-1234123421-341234123-1234-1234123-51-400]
+2026-01-08 10:37:26,936 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:119: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:37:28,049 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[-100-1200-123-1-taobao-1234123421-341234123-1234-1234123-51-400]
+2026-01-08 10:37:28,050 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:119: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:37:28,981 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[1200-1200-123-1-taobao--341234123-1234-1234123-51-400]
+2026-01-08 10:37:28,981 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:119: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:37:29,849 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_standalone_transfer_invalid_params[1200-1200-123-1-taobao-1234123421--1234-1234123-51-400]
+2026-01-08 10:37:29,849 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:119: in test_standalone_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:37:30,165 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123--1234123-51-400]
+2026-01-08 10:37:30,486 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123-1234--51-400]
+2026-01-08 10:37:30,860 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_standalone_transfer_missing_params
+2026-01-08 10:37:30,864 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 10:56:05,889 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 10:56:06,339 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_auth
+2026-01-08 10:56:06,753 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_with_valid_params
+2026-01-08 10:56:07,198 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[0-10-1765123200-1765209599]
+2026-01-08 10:56:07,198 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:56:07,560 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[-1-10-1765123200-1765209599]
+2026-01-08 10:56:07,561 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:56:07,956 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1-0-1765123200-1765209599]
+2026-01-08 10:56:07,957 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为200
+2026-01-08 10:56:08,309 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1--1-1765123200-1765209599]
+2026-01-08 10:56:08,310 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 10:56:08,623 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1-1001-1765123200-1765209599]
+2026-01-08 10:56:08,623 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为200
+2026-01-08 10:56:08,921 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_time_range
+2026-01-08 10:56:09,279 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list_invalid_time_range
+2026-01-08 10:56:09,279 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:166: in test_get_transfer_list_invalid_time_range
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为200
+2026-01-08 10:56:09,284 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 10:57:27,631 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 10:57:28,075 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_auth
+2026-01-08 10:57:28,379 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_with_valid_params
+2026-01-08 10:57:28,809 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[0-10-1765123200-1765209599-500]
+2026-01-08 10:57:29,234 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[-1-10-1765123200-1765209599-500]
+2026-01-08 10:57:29,551 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1-0-1765123200-1765209599-200]
+2026-01-08 10:57:29,893 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1--1-1765123200-1765209599-500]
+2026-01-08 10:57:30,216 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[1-1001-1765123200-1765209599-200]
+2026-01-08 10:57:30,531 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_time_range
+2026-01-08 10:57:30,851 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_invalid_time_range
+2026-01-08 10:57:30,855 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 0
+2026-01-08 14:33:49,314 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 14:33:49,745 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_without_auth
+2026-01-08 14:33:51,282 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_with_valid_params
+2026-01-08 14:33:52,310 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[0-1200-123-1-taobao-1234123421-341234123-1234-1234123-51]
+2026-01-08 14:33:52,311 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 14:33:53,434 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[-100-1200-123-1-taobao-1234123421-341234123-1234-1234123-51]
+2026-01-08 14:33:53,434 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 14:33:54,400 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao--341234123-1234-1234123-51]
+2026-01-08 14:33:54,400 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 14:33:55,355 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421--1234-1234123-51]
+2026-01-08 14:33:55,356 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 14:33:55,685 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123--1234123-51]
+2026-01-08 14:33:55,978 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123-1234--51]
+2026-01-08 14:33:55,987 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 14:35:49,950 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 14:35:50,369 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_without_auth
+2026-01-08 14:35:51,803 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_with_valid_params
+2026-01-08 14:35:52,884 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[0-1200-123-1-taobao-1234123421-341234123-1234-1234123-51-500]
+2026-01-08 14:35:53,798 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[-100-1200-123-1-taobao-1234123421-341234123-1234-1234123-51-500]
+2026-01-08 14:35:54,696 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao--341234123-1234-1234123-51-500]
+2026-01-08 14:35:55,526 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421--1234-1234123-51-500]
+2026-01-08 14:35:55,954 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123--1234123-51-500]
+2026-01-08 14:35:55,954 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为500，实际为400
+2026-01-08 14:35:56,258 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[1200-1200-123-1-taobao-1234123421-341234123-1234--51-500]
+2026-01-08 14:35:56,259 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:128: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, expected_code)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为500，实际为400
+2026-01-08 14:35:56,266 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 16:16:52,257 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 16:16:52,704 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_auth
+2026-01-08 16:16:53,025 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case0]
+2026-01-08 16:16:53,344 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case1]
+2026-01-08 16:16:53,663 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case2]
+2026-01-08 16:16:54,122 - api_test_framework.conftest - ERROR - ✗ api/test_standalone_transfer::test_get_transfer_list[test_case3]
+2026-01-08 16:16:54,122 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_standalone_transfer.py:85: in test_get_transfer_list
+    self.transfer_api._validate_response_code(response, test_case["expected_code"])
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
+2026-01-08 16:16:56,222 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_without_auth
+2026-01-08 16:16:56,222 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:50: in test_create_transfer_without_auth
+    self.transfer_api._validate_status_code(response, 401)
+core\api\base_api.py:50: in _validate_status_code
+    assert response.status_code == expected, f"状态码应该为{expected}，实际为{response.status_code}"
+E   AssertionError: 状态码应该为401，实际为200
+2026-01-08 16:16:57,480 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case0]
+2026-01-08 16:16:58,530 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case1]
+2026-01-08 16:16:59,547 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case2]
+2026-01-08 16:17:00,469 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case3]
+2026-01-08 16:17:00,779 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[test_case4]
+2026-01-08 16:17:00,779 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:85: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, test_case["expected_code"])
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为500，实际为400
+2026-01-08 16:17:01,172 - api_test_framework.conftest - ERROR - ✗ api/test_create_transfer::test_create_transfer_invalid_params[test_case5]
+2026-01-08 16:17:01,173 - api_test_framework.conftest - ERROR - 失败原因: tests\api\test_create_transfer.py:85: in test_create_transfer_invalid_params
+    self.transfer_api._validate_response_code(response, test_case["expected_code"])
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为500，实际为400
+2026-01-08 16:17:01,178 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 1
+2026-01-08 16:19:39,031 - api_test_framework.conftest - INFO - 测试会话开始
+2026-01-08 16:19:39,497 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list_without_auth
+2026-01-08 16:19:39,855 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case0]
+2026-01-08 16:19:40,216 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case1]
+2026-01-08 16:19:40,593 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case2]
+2026-01-08 16:19:40,886 - api_test_framework.conftest - INFO - ✓ api/test_standalone_transfer::test_get_transfer_list[test_case3]
+2026-01-08 16:19:42,012 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_without_auth
+2026-01-08 16:19:42,934 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case0]
+2026-01-08 16:19:44,011 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case1]
+2026-01-08 16:19:44,862 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case2]
+2026-01-08 16:19:45,789 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case3]
+2026-01-08 16:19:46,137 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case4]
+2026-01-08 16:19:46,461 - api_test_framework.conftest - INFO - ✓ api/test_create_transfer::test_create_transfer_invalid_params[test_case5]
+2026-01-08 16:19:46,466 - api_test_framework.conftest - INFO - 测试会话结束 - 退出状态码: 0

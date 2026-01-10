@@ -1,0 +1,1 @@
+✓ api/test_ping::test_ping_response_time

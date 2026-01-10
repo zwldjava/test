@@ -1,0 +1,1 @@
+✓ api/test_standalone_transfer::test_get_transfer_list[test_case2]

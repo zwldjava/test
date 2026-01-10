@@ -1,0 +1,1 @@
+✓ api/test_standalone_transfer::test_standalone_transfer_without_auth

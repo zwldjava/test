@@ -1,0 +1,6 @@
+✗ api/test_standalone_transfer::test_get_transfer_list_invalid_pagination[0-10-1765123200-1765209599]
+失败原因: tests\api\test_standalone_transfer.py:113: in test_get_transfer_list_invalid_pagination
+    self.transfer_api._validate_response_code(response, 400)
+core\api\base_api.py:55: in _validate_response_code
+    assert actual == expected, f"响应码应该为{expected}，实际为{actual}"
+E   AssertionError: 响应码应该为400，实际为500
